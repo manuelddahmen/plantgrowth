@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7fd09acf-54f1-4728-a241-41207a28a4a0" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Plants-Growth-2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LSystem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/LSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2227">
+              <caret line="321" column="8" lean-forward="false" selection-start-line="321" selection-start-column="8" selection-end-line="321" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCaseExtended.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/TestCaseExtended.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="144" column="29" lean-forward="false" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawingLSystem2D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/DrawingLSystem2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="158" column="56" lean-forward="false" selection-start-line="158" selection-start-column="56" selection-end-line="158" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDrawingLSystem2D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/TestDrawingLSystem2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1513">
+              <caret line="322" column="16" lean-forward="false" selection-start-line="322" selection-start-column="16" selection-end-line="322" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3145">
+              <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>anglesXYZ</find>
+      <find>Turtle3D</find>
+      <find>double</find>
+      <find>assertE</find>
+      <find>VariableTree</find>
+      <find>Var</find>
+      <find>out.</find>
+      <find>Add formula=</find>
+      <find>formula</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>p3dUnite</replace>
+      <replace>Turtle3D_4</replace>
+      <replace>Double</replace>
+      <replace>Rotation2</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Line\IdeaProjects\Plants-Growth-2</dir>
+      <dir>C:\Users\Line\IdeaProjects\Plants-Growth-2\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Manuel Dahmen &lt;manueldahmen.smoke@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/src/java/main/be/manudahmen/growth" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turte2D.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle2D.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/ParameterSequence.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle2DTest.java" />
+        <option value="$PROJECT_DIR$/src/java/test/TestRotation.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle3DTest.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_2.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_3.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestCaseExtended.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Drawing.java" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle3D_4Test.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_4.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/generativemusic.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/ROat.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestRotation2.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestRotation.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Rotation2.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_1.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3D_2Test.java" />
+        <option value="$PROJECT_DIR$/configTest.properties" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestRotation2_methodeBis.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/jcalculator/extension/LSystemTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Action.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/actionstype/CharacterAction.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/jcalculator/extension/LSystemParameterTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3DTest.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Parameter.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Symbol.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestBasic.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Parameters.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/DrawingLSystem2D.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/FunctionalParameter.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/TestDrawingLSystem2D.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/LSystem.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/TestCaseExtended.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Rerun Failed Tests" />
+      <run-configuration type="JUnit" name="TestDrawingLSystem2D.testFractaleKoch" />
+    </enabled-run-configurations>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Plants' growth" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Plants' growth" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Plants' growth" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Plants' growth" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="manudahmen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="growth" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="pom.xml&#9;FILE&#9;file://C:/Users/Line/IdeaProjects/Plants-Growth-2/pom.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.manudahmen.growth.graphics" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.manudahmen.growth" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.manudahmen.growth.graphics" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Line\Pictures" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestDrawingLSystem2D.testFractaleKoch">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="All in plants" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="plants" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCaseExtended.testEmptyDirectory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="be.manudahmen.growth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="plants" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="be.manudahmen.growth" />
+      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.TestCaseExtended" />
+      <option name="METHOD_NAME" value="testEmptyDirectory" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCaseExtended.testVoid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="be.manudahmen.growth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="plants" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="be.manudahmen.growth" />
+      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.TestCaseExtended" />
+      <option name="METHOD_NAME" value="testVoid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestDrawingLSystem2D.testDrawing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="be.manudahmen.growth.graphics.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="plants" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="be.manudahmen.growth.graphics.test" />
+      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.graphics.test.TestDrawingLSystem2D" />
+      <option name="METHOD_NAME" value="testDrawing" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestDrawingLSystem2D.testFractaleKoch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="be.manudahmen.growth.graphics.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="plants" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="be.manudahmen.growth.graphics.test" />
+      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.graphics.test.TestDrawingLSystem2D" />
+      <option name="METHOD_NAME" value="testFractaleKoch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in plants" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestDrawingLSystem2D.testFractaleKoch" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCaseExtended.testEmptyDirectory" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestDrawingLSystem2D.testDrawing" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCaseExtended.testVoid" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCaseExtended.testVoid" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestDrawingLSystem2D.testDrawing" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCaseExtended.testEmptyDirectory" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestDrawingLSystem2D.testFractaleKoch" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in plants" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fd09acf-54f1-4728-a241-41207a28a4a0" name="Default" comment="" />
+      <created>1518806095914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518806095914</updated>
+      <workItem from="1518806099536" duration="5284000" />
+      <workItem from="1519161891172" duration="22863000" />
+      <workItem from="1519328476276" duration="21829000" />
+      <workItem from="1519405388999" duration="6041000" />
+      <workItem from="1519426731690" duration="4869000" />
+      <workItem from="1519481011552" duration="15165000" />
+      <workItem from="1519565167915" duration="555000" />
+      <workItem from="1519630013712" duration="1465000" />
+      <workItem from="1519720348762" duration="16472000" />
+      <workItem from="1519904398200" duration="1312000" />
+      <workItem from="1520033274702" duration="15874000" />
+      <workItem from="1520267592731" duration="21011000" />
+      <workItem from="1520397831785" duration="23979000" />
+      <workItem from="1520500406706" duration="698000" />
+      <workItem from="1520516652510" duration="1350000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update pom">
+      <created>1518948747006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518948747006</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Turtle2D">
+      <created>1519163215131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519163215131</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Turtle2D">
+      <created>1519163771513</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519163771513</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Done">
+      <created>1519166442796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1519166442796</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Done">
+      <created>1519200137051</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519200137051</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tests pass all">
+      <created>1519201604255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1519201604255</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tests pass all Move to correct package">
+      <created>1519203228984</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1519203228984</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ok Turtle3D starts">
+      <created>1519223242794</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1519223242794</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Turtle3D_3 begins to work">
+      <created>1519301017107</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1519301017107</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Turtle3D_3 begins to work">
+      <created>1519358649083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1519358649084</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Turtle3D_3 begins to work">
+      <created>1519384042427</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519384042431</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Turtle2D graphics">
+      <created>1519405761171</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1519405761172</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Turtle2D graphics">
+      <created>1519408495342</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1519408495343</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Test Fractale Koch">
+      <created>1519422525342</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1519422525342</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Test Fractale Koch">
+      <created>1519423162378</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1519423162378</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Lamdba">
+      <created>1519459141183</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1519459141183</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Try to run with functional parameters.">
+      <created>1519500585432</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1519500585432</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Nouvelle méthode de rotation inspirée de https://www.developpez.net/forums/d1821036/general-developpement/algorithme-mathematiques/general-algorithmique/rotation-d-angle-quelconque-autour-d-axe/#post10039609">
+      <created>1519728779512</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1519728779512</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Rotate: all tests pass.">
+      <created>1519740997957</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519740997957</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Turtle3D doesn't work.">
+      <created>1519818968329</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1519818968329</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Turtle3D doesn't work.">
+      <created>1520114150539</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1520114150539</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update parameters.">
+      <created>1520319243447</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1520319243447</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Commit before pursuit">
+      <created>1520349937506</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1520349937506</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Need tests updates">
+      <created>1520359783927</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1520359783927</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Need tests updates">
+      <created>1520361531302</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1520361531302</updated>
+    </task>
+    <task id="LOCAL-00026" summary="It compiles">
+      <created>1520363091874</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1520363091874</updated>
+    </task>
+    <task id="LOCAL-00027" summary="It compiles">
+      <created>1520363457520</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1520363457520</updated>
+    </task>
+    <task id="LOCAL-00028" summary="tests failed">
+      <created>1520404704672</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1520404704675</updated>
+    </task>
+    <task id="LOCAL-00029" summary="tests failed">
+      <created>1520453684616</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1520453684616</updated>
+    </task>
+    <task id="LOCAL-00030" summary="tests failed but correct jCalculator">
+      <created>1520494142094</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1520494142094</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Files missing in repository">
+      <created>1520499967320</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1520499967321</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Files missing in repository">
+      <created>1520532606354</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1520532606354</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Files missing in repository">
+      <created>1520532695517</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1520532695517</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_plants - 2018.03.08 at 08h 22m 25s.xml">
+      <configuration name="All in plants" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseExtended_testEmptyDirectory - 2018.03.08 at 08h 43m 52s.xml">
+      <configuration name="TestCaseExtended.testEmptyDirectory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseExtended_testVoid - 2018.03.08 at 08h 39m 33s.xml">
+      <configuration name="TestCaseExtended.testVoid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 08h 22m 01s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 08h 39m 56s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 08h 44m 25s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 09h 08m 57s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 09h 09m 12s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 09h 12m 42s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrawingLSystem2D_testFractaleKoch - 2018.03.08 at 09h 12m 55s.xml">
+      <configuration name="TestDrawingLSystem2D.testFractaleKoch" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="158767000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5056775" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33838" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32778198" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3881579" sideWeight="0.49432248" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296355" sideWeight="0.49707174" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33717105" sideWeight="0.45344436" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49432248" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17183952" sideWeight="0.49" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17183952" sideWeight="0.51" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.4795022" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.47464043" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Update pom" />
+    <MESSAGE value="Turtle2D" />
+    <MESSAGE value="Done" />
+    <MESSAGE value="Tests pass all" />
+    <MESSAGE value="Tests pass all Move to correct package" />
+    <MESSAGE value="Ok Turtle3D starts" />
+    <MESSAGE value="Turtle3D_3 begins to work" />
+    <MESSAGE value="Turtle2D graphics" />
+    <MESSAGE value="Test Fractale Koch" />
+    <MESSAGE value="Lamdba" />
+    <MESSAGE value="Try to run with functional parameters." />
+    <MESSAGE value="Nouvelle méthode de rotation inspirée de https://www.developpez.net/forums/d1821036/general-developpement/algorithme-mathematiques/general-algorithmique/rotation-d-angle-quelconque-autour-d-axe/#post10039609" />
+    <MESSAGE value="Rotate: all tests pass." />
+    <MESSAGE value="Turtle3D doesn't work." />
+    <MESSAGE value="Update parameters." />
+    <MESSAGE value="Commit before pursuit" />
+    <MESSAGE value="Need tests updates" />
+    <MESSAGE value="It compiles" />
+    <MESSAGE value="tests failed" />
+    <MESSAGE value="tests failed but correct jCalculator" />
+    <MESSAGE value="Files missing in repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files missing in repository" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle2DTest.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="symbols" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-519_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-533_.0.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-537_.2.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-539_.3.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-541_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/be.manudahmen.growth.graphics.test.Turtle3D_2Test___null-134_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/be.manudahmen.growth.graphics.test.Turtle3D_2Test___null-137_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/be.manudahmen.growth.graphics.test.Turtle3DTest___null-131_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/be.manudahmen.growth.graphics.test.Turtle3DTest___null-134_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/be.manudahmen.growth.graphics.Turtle3D_4Test___test1-71_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testLineRotate.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-569_.1.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-563_.3.jpg" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/stream/ForEachOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/be.manudahmen.growth.TestRotation2_methodeBis___null-354_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testDrawing-580_.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-605_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-616_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-638_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-649_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/FunctionalParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="161" column="22" lean-forward="false" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Parameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="130" column="71" lean-forward="false" selection-start-line="130" selection-start-column="71" selection-end-line="130" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-663_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-666_.0.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-668_.1.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-670_.2.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-672_.3.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-674_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-688_.0.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-690_.1.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-692_.2.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-694_.3.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-696_.4.jpg" />
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-716_.4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-714_.3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-718_.4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-738_.4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-740_.4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../javalin/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../javalin/src/javalin/LSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#6026#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COPYING">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11441">
+          <caret line="673" column="49" lean-forward="false" selection-start-line="673" selection-start-column="49" selection-end-line="673" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Symbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#5621#5622#0" expanded="false" />
+            <element signature="e#5649#5650#0" expanded="false" />
+            <element signature="e#5680#5681#0" expanded="false" />
+            <element signature="e#5708#5709#0" expanded="false" />
+            <element signature="e#6176#6177#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle.java" />
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/LSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="321" column="8" lean-forward="false" selection-start-line="321" selection-start-column="8" selection-end-line="321" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/DrawingLSystem2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="158" column="56" lean-forward="false" selection-start-line="158" selection-start-column="56" selection-end-line="158" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/TestDrawingLSystem2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="322" column="16" lean-forward="false" selection-start-line="322" selection-start-column="16" selection-end-line="322" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3145">
+          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/TestCaseExtended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="144" column="29" lean-forward="false" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Copyright Libre GPL3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>plants</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="deploy" />
+    <option value="install" />
+    <option value="clean deploy" />
+  </component>
+</project>
