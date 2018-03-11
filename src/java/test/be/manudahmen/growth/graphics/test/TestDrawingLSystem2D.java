@@ -222,6 +222,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth.graphics.test;
 
 import be.manudahmen.growth.*;
@@ -240,7 +256,30 @@ import java.util.HashMap;
 public class TestDrawingLSystem2D extends TestCaseExtended {
     private int MAX = 5;
 
-    public void testDrawing() {
+    /**
+     * n = 4, δ = 90°
+     * F+F+F+F
+     * F → FF+F+F+F+F+F−F
+     * n = 4, δ = 90°
+     * F+F+F+F
+     * F → FF+F+F+F+FF
+     * n = 3, δ = 90°
+     * F+F+F+F
+     * F → FF+F−F+F+FF
+     * n = 4, δ = 90°
+     * F+F+F+F
+     * F → FF+F++F+F
+     * n = 5, δ = 90°
+     * F+F+F+F
+     * F → F+FF++F+F
+     * n = 4, δ = 90°
+     * F+F+F+F
+     * F → F+F−F+F+F
+     * −
+     * Figure 2.5: A sequence of Koch curves obtained by successively modifying
+     * the production successor.
+     */
+    public void testDrawing() throws NotWellFormattedSystem {
         Turtle2D turtle2D;
         LSystem lSystem = new LSystem();
         lSystem.init();
@@ -321,6 +360,9 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
     }
 
     public void testFractaleKoch() throws Exception {
+        double angle = Math.PI / 2;
+        String angleStr = ""+angle;
+
         Turtle2D turtle2D;
 
         LSystem lSystem = new LSystem();
@@ -335,52 +377,28 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
         symbols[1] = new Symbol('+');
         symbols[2] = new Symbol('-');
 
-        lSystem.addParameter(0, symbols[0], new FunctionalParameter("F", 40.0, "160/(4*t)"));
-        lSystem.addParameter(0, symbols[1], new FunctionalParameter("+", Math.PI / 2, "" + Math.PI / 2));
-        lSystem.addParameter(0, symbols[2], new FunctionalParameter("-", -Math.PI / 2, "" + (-Math.PI / 2)));
-
-        ParameterSequence parameterSequence;
-        ArrayList<Parameter> objects;
+        lSystem.addParameter(0, new FunctionalParameter("F", 40.0,
+                "160/(4*t)"));
+        lSystem.addParameter(0, new FunctionalParameter("+", angle,
+                angleStr));
+        lSystem.addParameter(0, new FunctionalParameter("-", -angle,
+                "-" + angleStr));
 
 
         map = new HashMap<>();
         map.put(symbols[0], graph[0]);
         map.put(symbols[1], graph[2]);
-        map.put(symbols[2], graph[2]);
+        map.put(symbols[2], graph[3]);
 
-        SymbolSequence[] rules = new SymbolSequence[2];
-        rules[0] = new SymbolSequence();
-        rules[0].add(new Symbol('F'));
-
-        rules[1] = new SymbolSequence();
-        rules[1].add(new Symbol('F'));
-        rules[1].add(new Symbol('+'));
-        rules[1].add(new Symbol('F'));
-        rules[1].add(new Symbol('-'));
-        rules[1].add(new Symbol('F'));
-        rules[1].add(new Symbol('-'));
-        rules[1].add(new Symbol('F'));
-        rules[1].add(new Symbol('F'));
-        rules[1].add(new Symbol('+'));
-        rules[1].add(new Symbol('F'));
-        rules[1].add(new Symbol('-'));
-        rules[1].add(new Symbol('F'));
-        lSystem.addRule(rules[0], rules[1]);
+        lSystem.addRule("F", "F+F-F-FF+F+F-F");
 
 
-        SymbolSequence symbolSequence = new SymbolSequence();
-        symbolSequence.add(new Symbol('F'));
-        symbolSequence.add(new Symbol('+'));
-        symbolSequence.add(new Symbol('+'));
-        symbolSequence.add(new Symbol('F'));
-        symbolSequence.add(new Symbol('+'));
-        symbolSequence.add(new Symbol('F'));
-        lSystem.setCurrentSymbols(symbolSequence);
+        lSystem.setCurrentSymbols("F+F+F+F");
 
 
         lSystem.applyRules();
         for (int i = 0; i < MAX; i++) {
-            BufferedImage bufferedImage = new BufferedImage(1600, 1200, BufferedImage.TYPE_INT_RGB);
+            BufferedImage bufferedImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_RGB);
             turtle2D = new Turtle2D(bufferedImage);
             turtle2D.setZeColor(Color.RED);
             DrawingLSystem2D drawingLSystem2D = new DrawingLSystem2D(turtle2D, lSystem, map);
@@ -397,4 +415,59 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
 
 
     }
+
+    public void testFractaleKoch1() throws Exception {
+        double angle = Math.PI / 2;
+        String angleStr = "" + angle;
+
+        Turtle2D turtle2D;
+
+        LSystem lSystem = new LSystem();
+        lSystem.init();
+
+        HashMap<Symbol, String> map;
+
+        String[] graph = new String[]{"line", "move", "left", "right"};
+
+        Symbol[] symbols = new Symbol[3];
+        symbols[0] = new Symbol('F');
+        symbols[1] = new Symbol('+');
+        symbols[2] = new Symbol('-');
+
+        lSystem.addParameter(0, new FunctionalParameter("F", 40.0,
+                "160/(4*t)"));
+        lSystem.addParameter(0, new FunctionalParameter("+", angle,
+                angleStr));
+        lSystem.addParameter(0, new FunctionalParameter("-", -angle,
+                "-" + angleStr));
+
+        map = new HashMap<>();
+        map.put(symbols[0], graph[0]);
+        map.put(symbols[1], graph[2]);
+        map.put(symbols[2], graph[3]);
+
+        lSystem.addRule("F", "F-F+F+F-F");
+
+        lSystem.setCurrentSymbols("+F");
+
+        lSystem.applyRules();
+        for (int i = 0; i < MAX; i++) {
+            BufferedImage bufferedImage = new BufferedImage(800, 600, BufferedImage.TYPE_INT_RGB);
+            turtle2D = new Turtle2D(bufferedImage);
+            turtle2D.setZeColor(Color.RED);
+            DrawingLSystem2D drawingLSystem2D = new DrawingLSystem2D(turtle2D, lSystem, map);
+
+            drawingLSystem2D.drawStep();
+            try {
+                File filename = getUniqueFilenameForProduction("testResults", "testFractaleKoch2", "" + i + ".jpg");
+                ImageIO.write((RenderedImage) turtle2D.getZeImage(), "jpg", filename);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            lSystem.applyRules();
+        }
+
+
+    }
+
 }

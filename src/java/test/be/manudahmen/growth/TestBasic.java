@@ -80,6 +80,22 @@
 
 /*
  * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * This file is part of Plants-Growth-2
  *     Foobar is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
  *     the Free Software Foundation, either version 3 of the License, or
@@ -123,7 +139,7 @@ public class TestBasic extends TestCase {
         super.setUp();
     }
 
-    public void generate1(LSystem lSystem) {
+    public void generate1(LSystem lSystem) throws NotWellFormattedSystem {
         lSystem.applyRules();
     }
 
@@ -131,7 +147,7 @@ public class TestBasic extends TestCase {
         assertTrue(new SymbolSequence(new Symbol('A')).equals(new SymbolSequence(new Symbol('A'))));
     }
 
-    public void testA() {
+    public void testA() throws NotWellFormattedSystem {
 
         LSystem lSystem = new LSystem();
         lSystem.init();
@@ -139,20 +155,21 @@ public class TestBasic extends TestCase {
         SymbolSequence a = new SymbolSequence(new Symbol('A'));
         lSystem.addRule(a, a1);
 
-        lSystem.getCurrentSymbols().add(new Symbol('A'));
 
-        //System.out.println(lSystem);
+        lSystem.setCurrentSymbols("A");
+
+        System.out.println(lSystem);
 
         lSystem.applyRules();
 
 
-        //System.out.println(lSystem);
+        System.out.println(lSystem);
 
         assertTrue(lSystem.getCurrentSymbols().equals(new SymbolSequence(new Symbol('A'))));
 
     }
 
-    public void generateN(LSystem lSystem, int n) {
+    public void generateN(LSystem lSystem, int n) throws NotWellFormattedSystem {
         SymbolSequence ab = new SymbolSequence();
         ab.add(new Symbol('A'));
         ab.add(new Symbol('B'));
@@ -173,7 +190,7 @@ public class TestBasic extends TestCase {
         }
     }
 
-    public void testGenerate2() {
+    public void testGenerate2() throws NotWellFormattedSystem {
         LSystem lSystem = new LSystem();
         lSystem.init();
         lSystem.getCurrentSymbols().add(new Symbol('A'));
@@ -185,7 +202,7 @@ public class TestBasic extends TestCase {
         assertTrue(lSystem.getCurrentSymbols().equals(symbolSequence));
     }
 
-    public void testGenerate1() {
+    public void testGenerate1() throws NotWellFormattedSystem {
 
         LSystem lSystem = new LSystem();
         lSystem.init();

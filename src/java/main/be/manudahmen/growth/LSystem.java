@@ -174,6 +174,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import be.manudahmen.jcalculator.*;
@@ -241,13 +257,13 @@ public class LSystem {
 
     }
 
-    public SymbolSequence applyRules() {
+    public SymbolSequence applyRules() throws NotWellFormattedSystem {
         /***
          * After this method call, the added sequence will
          * contains the current symbols of the system
          */
         if (getCurrentSymbols() == null) {
-
+            throw new NotWellFormattedSystem("no cuurent symobols");
         }
 
         SymbolSequence data = getCurrentSymbols().parts();
@@ -256,8 +272,8 @@ public class LSystem {
         SymbolSequence rest = new SymbolSequence();
 
 
-        int ok = 0;
         for (int i = 0; i < data.size(); i++) {
+            int ok = 0;
 
             for (java.util.Map.Entry<SymbolSequence, SymbolSequence> entry : rules.entrySet()) {
 
@@ -268,7 +284,10 @@ public class LSystem {
                         ; j++) {
                     if (data.get(i + j).equals(symbols.get(j))) {
                         ok++;
+                    } else {
+                        ok = 0;
                     }
+
                     if (ok == symbols.size() && ok > 0) {
                         rest.addAll(replacement);
                         i = i + j;
@@ -276,7 +295,10 @@ public class LSystem {
                         break;
                     }
                 }
+                if (ok == 0) {
+                    rest.add(data.get(i));
 
+                }
             }
 
         }
@@ -291,6 +313,33 @@ public class LSystem {
         return rest;
     }
 
+    public void addRule(String search, String replacement) {
+        SymbolSequence[] rule = new SymbolSequence[2];
+        rule[0] = new SymbolSequence();
+        rule[1] = new SymbolSequence();
+
+        byte[] searBytes = search.getBytes();
+
+        byte[] replBytes = replacement.getBytes();
+        for (byte searByte : searBytes) {
+            rule[0].add(new Symbol((char) searByte));
+        }
+
+        for (byte replByte : replBytes) {
+            rule[1].add(new Symbol((char) replByte));
+        }
+
+        addRule(rule[0], rule[1]);
+    }
+
+    public void addInitialSymbols(String is) {
+        SymbolSequence start = new SymbolSequence();
+        byte[] replBytes = is.getBytes();
+        for (byte searByte : replBytes) {
+            start.add(new Symbol((char) searByte));
+        }
+        setCurrentSymbols(start);
+    }
     private void updateParams() {
         HashMap<String, Parameter> parameters = this.parameters.getParameters(t - 1);
         if (parameters != null)
@@ -310,15 +359,17 @@ public class LSystem {
 
     }
 
+    // TODO Vérifier cette méthode.
     public SymbolSequence getCurrentSymbols() {
 
-        if (symbols.size() <= t) {
-
+        if (symbols.size() == 0) {
             SymbolSequence ss;
             symbols.add(ss = new SymbolSequence());
             initialParameters.forEach((symbol, parameter) -> ss.add(symbol));
-
+            return symbols.get(0);
         }
+        if (symbols.size() < t)
+            return symbols.get(symbols.size() - 1);
         return symbols.get(t);
     }
 
@@ -328,7 +379,7 @@ public class LSystem {
 
     public String toString() {
         final String[] s = {"LSystem(t==" + t + "\n"};
-        for (int i = 0; i < t; i++) {
+        for (int i = 0; i < symbols.size(); i++) {
             s[0] += "\nData\nSTEP" + i + "\n----\n";
             s[0] += symbols.get(i).parts().toString();
         }
@@ -369,17 +420,28 @@ public class LSystem {
         return t;
     }
 
-    public void addParameter(int t, Symbol symbol, FunctionalParameter functionalParameter) {
+    public void addParameter(int t, FunctionalParameter functionalParameter) {
         functionalParameter.lSystem = this;
         if (t == 0) {
             addInitialParam(functionalParameter);
-        } else {
-            parameters.addParameter(t, functionalParameter);
         }
+
+        parameters.addParameter(t, functionalParameter);
+
     }
 
     public void addInitialParam(FunctionalParameter f) {
         parameters.addParameter(0, f);
+    }
+
+    public void setCurrentSymbols(String a) {
+
+        SymbolSequence start = new SymbolSequence();
+        byte[] replBytes = a.getBytes();
+        for (byte searByte : replBytes) {
+            start.add(new Symbol((char) searByte));
+        }
+        setCurrentSymbols(start);
     }
 }
 

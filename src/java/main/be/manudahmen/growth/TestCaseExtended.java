@@ -142,6 +142,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import java.awt.image.BufferedImage;
@@ -151,20 +167,24 @@ import java.util.Properties;
 import be.manudahmen.empty3.Point3D;
 import be.manudahmen.empty3.ZBuffer;
 import junit.framework.TestCase;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import javax.imageio.ImageIO;
 
 public class TestCaseExtended extends TestCase {
-    private boolean isInitialized = false;
+    private static boolean isInitialized = false;
+    private static TestCaseExtended caseExtended;
     private int serId;
 
+    @BeforeClass
     @Override
     public void setUp() throws Exception {
         super.setUp();
         if (!isInitialized) {
-            loadSaveNewSerId();
-            emptyTestResultsDirectory();
+            caseExtended = new TestCaseExtended();
+            caseExtended.loadSaveNewSerId();
+            caseExtended.emptyTestResultsDirectory();
             isInitialized = true;
         }
     }
@@ -173,7 +193,7 @@ public class TestCaseExtended extends TestCase {
         assertEquals(x.get(0) + x.get(1) + x.get(2), Double.NaN);
     }
 
-    public int loadSaveNewSerId() {
+    private int loadSaveNewSerId() {
         File file = new File("configTest.properties");
         if (!file.exists()) {
         }
@@ -205,15 +225,15 @@ public class TestCaseExtended extends TestCase {
         setSerId(nextInt);
     }
 
-    public void setSerId(int serId) {
+    private void setSerId(int serId) {
         this.serId = serId;
     }
 
-    public int getSerId() {
+    protected int getSerId() {
         return serId;
     }
 
-    public File getUniqueFilenameForProduction(String directory, String baseFilename, String extension) throws IOException {
+    protected File getUniqueFilenameForProduction(String directory, String baseFilename, String extension) throws IOException {
         File file;
         int lastId = loadSaveNewSerId();
         do {
@@ -230,13 +250,13 @@ public class TestCaseExtended extends TestCase {
         return file;
     }
 
-    public void assertEqualsPoint3D(Point3D x, Point3D y, double delta) {
+    protected void assertEqualsPoint3D(Point3D x, Point3D y, double delta) {
         for (int i = 0; i < 3; i++) {
             assertEquals(y.get(i), x.get(i), delta);
         }
     }
 
-    public void writeImage(BufferedImage image) {
+    protected void writeImage(BufferedImage image) {
         try {
             java.io.File imageFile = getUniqueFilenameForProduction("testResults", getClass().getCanonicalName() + "___" + getClass().getEnclosingMethod(), "jpg");
             ImageIO.write(image, "jpg", imageFile);
@@ -246,20 +266,19 @@ public class TestCaseExtended extends TestCase {
         }
     }
 
-    public void writeImage(ZBuffer z) {
+    protected void writeImage(ZBuffer z) {
         z.draw();
         writeImage(z.image());
 
     }
 
-    @Test
-    public void testVoid() {
-        assertTrue(true);
-    }
-
-    public static void emptyTestResultsDirectory() {
+    private void emptyTestResultsDirectory() {
         for (String f : new File("testResults").list()) {
             new File("testResults" + File.separator + f).delete();
         }
+    }
+
+    public void testVoid() {
+        assertTrue(((true == true) != false) | false);
     }
 }
