@@ -190,6 +190,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import be.manudahmen.jcalculator.*;
@@ -219,6 +235,7 @@ public class LSystem {
         parameters = new Parameters(this);
         init = true;
     }
+
     public void addInitialParameter(Symbol symbol, Parameter parameter) {
         initialParameters.put(symbol, parameter);
     }
@@ -295,10 +312,11 @@ public class LSystem {
                         break;
                     }
                 }
-                if (ok == 0) {
-                    rest.add(data.get(i));
 
-                }
+            }
+            if (ok == 0) {
+                rest.add(data.get(i));
+
             }
 
         }
@@ -340,17 +358,18 @@ public class LSystem {
         }
         setCurrentSymbols(start);
     }
+
     private void updateParams() {
         HashMap<String, Parameter> parameters = this.parameters.getParameters(t - 1);
         if (parameters != null)
             parameters.forEach(new BiConsumer<String, Parameter>() {
-            @Override
-            public void accept(String s, Parameter parameter) {
-                FunctionalParameter f;
-                f = new FunctionalParameter(parameter.getName(), parameter.eval(getT(), 1), parameter.getFormula());
-                LSystem.this.parameters.addParameter(t, f);
-            }
-        });
+                @Override
+                public void accept(String s, Parameter parameter) {
+                    FunctionalParameter f;
+                    f = new FunctionalParameter(parameter.getName(), parameter.eval(getT(), 1), parameter.getFormula());
+                    LSystem.this.parameters.addParameter(t, f);
+                }
+            });
 
     }
 
