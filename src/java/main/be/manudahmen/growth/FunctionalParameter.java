@@ -126,6 +126,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import be.manudahmen.jcalculator.*;
@@ -163,10 +179,10 @@ public class FunctionalParameter extends Parameter {
             final Parameter that = this;
 
             final HashMap<String, Parameter> paramsT0 = new HashMap<>();
-            if (recurse >= 0) {
-                paramsT0.putAll(lSystem.getParams(t - 1));
-            }
-            if (paramsT0 == null) {
+
+            paramsT0.putAll(lSystem.getParams(t - 1));
+
+            if (paramsT0.size() == 0) {
                 lSystem.getInitialParameters().forEach(new BiConsumer<Symbol, Parameter>() {
                     @Override
                     public void accept(Symbol symbol, Parameter parameter) {

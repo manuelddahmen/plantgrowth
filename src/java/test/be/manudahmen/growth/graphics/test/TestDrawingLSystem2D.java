@@ -254,6 +254,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth.graphics.test;
 
 import be.manudahmen.growth.*;
@@ -270,7 +286,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TestDrawingLSystem2D extends TestCaseExtended {
-    private int MAX = 5;
+    private int MAX = 3;
 
     /**
      * n = 4, δ = 90°
@@ -394,7 +410,7 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
         symbols[2] = new Symbol('-');
 
         lSystem.addParameter(0, new FunctionalParameter("F", 20.0,
-                "20/(4*t*t)"));
+                "160/(4*t*t)"));
         lSystem.addParameter(0, new FunctionalParameter("+", angle,
                 angleStr));
         lSystem.addParameter(0, new FunctionalParameter("-", -angle,
@@ -412,7 +428,6 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
         lSystem.setCurrentSymbols("F+F+F+F");
 
 
-        lSystem.applyRules();
         runLSystem(MAX, lSystem, map, 1600, 1200, "testFractaleKoch", true);
 
 
@@ -421,8 +436,6 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
     public void testFractaleKoch1() throws Exception {
         double angle = Math.PI / 2;
         String angleStr = "" + angle;
-
-        Turtle2D turtle2D;
 
         LSystem lSystem = new LSystem();
         lSystem.init();
@@ -452,14 +465,13 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
 
         lSystem.setCurrentSymbols("+F");
 
-        lSystem.applyRules();
         runLSystem(MAX, lSystem, map, 800, 600, "testFractaleKoch2", true);
 
 
     }
 
     public void testDragonCurve() throws Exception {
-        int N = 14;
+        int N = 3;
 
         double angle = Math.PI / 2;
         String angleStr = "" + angle;
@@ -471,7 +483,7 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
 
         HashMap<Symbol, String> map;
 
-        String[] graph = new String[]{"line", "move", "left", "right"};
+        String[] graph = new String[]{"line", "move", "left", "right", "nothing"};
 
         Symbol[] symbols = new Symbol[5];
         symbols[0] = new Symbol('F');
@@ -481,23 +493,75 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
         symbols[4] = new Symbol('l');
 
         lSystem.addParameter(0, new FunctionalParameter("F", 40.0,
-                "160/(4*t)"));
+                "160/(t*4)"));
         lSystem.addParameter(0, new FunctionalParameter("+", angle,
                 angleStr));
         lSystem.addParameter(0, new FunctionalParameter("-", -angle,
                 "-" + angleStr));
+        lSystem.addParameter(0, new FunctionalParameter("r", 0.0, "0.0"));
+        lSystem.addParameter(0, new FunctionalParameter("l", 0.0, "0.0"));
 
         map = new HashMap<>();
         map.put(symbols[0], graph[0]);
         map.put(symbols[1], graph[2]);
         map.put(symbols[2], graph[3]);
+        map.put(symbols[3], graph[4]);
+        map.put(symbols[4], graph[4]);
 
         lSystem.addRule("l", "l+rF+");
         lSystem.addRule("r", "-Fl-r");
 
         lSystem.setCurrentSymbols("Fl");
 
-        runLSystem(N - 1, lSystem, map, 1600, 800, "testDragonCurve", false);
+
+        runLSystem(N - 1, lSystem, map, 1600, 800, "testDragonCurve", true);
+
+
+    }
+
+    public void testPseudoHilbert() throws Exception {
+        int N = 3;
+
+        double angle = Math.PI / 2;
+        String angleStr = "" + angle;
+
+        Turtle2D turtle2D;
+
+        LSystem lSystem = new LSystem();
+        lSystem.init();
+
+        HashMap<Symbol, String> map;
+
+        String[] graph = new String[]{"line", "move", "left", "right", "nothing"};
+
+        Symbol[] symbols = new Symbol[3];
+        symbols[0] = new Symbol('F');
+        symbols[1] = new Symbol('+');
+        symbols[2] = new Symbol('-');
+
+        lSystem.addParameter(0, new FunctionalParameter("F", 40.0,
+                "160/(t*4)"));
+        lSystem.addParameter(0, new FunctionalParameter("+", angle,
+                angleStr));
+        lSystem.addParameter(0, new FunctionalParameter("-", -angle,
+                "-" + angleStr));
+        lSystem.addParameter(0, new FunctionalParameter("r", 0.0, "0.0"));
+        lSystem.addParameter(0, new FunctionalParameter("l", 0.0, "0.0"));
+
+        map = new HashMap<>();
+        map.put(symbols[0], graph[0]);
+        map.put(symbols[1], graph[2]);
+        map.put(symbols[2], graph[3]);
+
+        //lSystem.addRule("X", "XFYFX+F+YFXFY−F−XFYFX");
+        //lSystem.addRule("Y", "YFXFY−F−XFYFX+F+YFXFY");
+        lSystem.addRule("L", "+RF-LFL-FR+");
+        lSystem.addRule("R", "-LF+RFR+FL-");
+
+        //lSystem.setCurrentSymbols("X");
+        lSystem.setCurrentSymbols("L");
+
+        runLSystem(N, lSystem, map, 1600, 800, "PseudoHilbertCurve", true);
 
 
     }
@@ -506,6 +570,7 @@ public class TestDrawingLSystem2D extends TestCaseExtended {
         Turtle2D turtle2D;
         for (int i = 0; i < n; i++) {
             lSystem.applyRules();
+            System.out.println("t::" + lSystem.getT());
             if (i < n - 1 && writeIntermediateImages) {
                 BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
                 turtle2D = new Turtle2D(bufferedImage);

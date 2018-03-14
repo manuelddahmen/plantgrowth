@@ -206,6 +206,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import be.manudahmen.jcalculator.*;
@@ -222,7 +238,7 @@ public class LSystem {
     private HashSet<Constant> constants = new HashSet<>();
     private Parameters parameters;
     private Map<Symbol, Parameter> initialParameters = new HashMap<>();
-    private boolean init;
+    private boolean init = false;
 
     public LSystem() {
         initFirstSymbols();
@@ -232,7 +248,8 @@ public class LSystem {
      * Call it just after constructor. // TODO Refactor
      */
     public void init() {
-        parameters = new Parameters(this);
+        if (!init)
+            parameters = new Parameters(this);
         init = true;
     }
 
@@ -365,9 +382,15 @@ public class LSystem {
             parameters.forEach(new BiConsumer<String, Parameter>() {
                 @Override
                 public void accept(String s, Parameter parameter) {
-                    FunctionalParameter f;
-                    f = new FunctionalParameter(parameter.getName(), parameter.eval(getT(), 1), parameter.getFormula());
-                    LSystem.this.parameters.addParameter(t, f);
+                    if (parameter != null) {
+                        FunctionalParameter f;
+                        f = new FunctionalParameter(
+                                parameter.getName(),
+                                parameter.eval(getT(), 0),
+                                parameter.getFormula());
+                        LSystem.this.parameters.addParameter(t, f);
+                    }
+
                 }
             });
 
@@ -439,7 +462,7 @@ public class LSystem {
         return t;
     }
 
-    public void addParameter(int t, FunctionalParameter functionalParameter) {
+    public void addParameter(int t, Parameter functionalParameter) {
         functionalParameter.lSystem = this;
         if (t == 0) {
             addInitialParam(functionalParameter);
@@ -449,7 +472,8 @@ public class LSystem {
 
     }
 
-    public void addInitialParam(FunctionalParameter f) {
+    public void addInitialParam(Parameter f) {
+        f.lSystem = this;
         parameters.addParameter(0, f);
     }
 

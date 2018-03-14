@@ -94,6 +94,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import java.util.HashMap;
@@ -125,10 +141,12 @@ public class Parameters {
     }
 
     public HashMap<String, Parameter> getParameters(int t) {
-        HashMap<String, Parameter> p = map.get(t);
-        return p;
+        HashMap<String, Parameter> p;
+        p = map.get(t);
+        return p != null ? p : new HashMap<String, Parameter>();
     }
-    public void addParameter(int t, FunctionalParameter f) {
+
+    public void addParameter(int t, Parameter f) {
         HashMap<String, Parameter> submap = this.map.get(t);
         if (submap == null) {
             this.map.put(t, new HashMap<>());
