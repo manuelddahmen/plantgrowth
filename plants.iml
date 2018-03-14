@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_windows" />
       <excludeFolder url="file://$MODULE_DIR$/codestyles" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/testResults" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
