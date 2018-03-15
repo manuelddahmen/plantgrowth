@@ -38,6 +38,22 @@
   ~     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
+<!--
+  ~ This file is part of Plants-Growth-2
+  ~     Plants-Growth-2 is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     Plants-Growth-2 is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppSound">
     <children>
@@ -46,16 +62,28 @@
         <RadioButton layoutX="40.0" layoutY="100.0" mnemonicParsing="false" text="Triangle"/>
         <RadioButton layoutX="40.0" layoutY="120.0" mnemonicParsing="false" text="Decay"/>
         <Slider id="octave" layoutX="33.0" layoutY="159.0" max="8.0" min="1.0" orientation="VERTICAL" value="4.0"/>
-        <HBox layoutX="74.0" layoutY="213.0" prefHeight="100.0" prefWidth="526.0">
+        <HBox layoutX="74.0" layoutY="180.0" prefHeight="100.0" prefWidth="526.0">
             <children>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
-                <Button mnemonicParsing="false" text="Button"/>
+                <Button mnemonicParsing="false" text="DO" id="DO"/>
+                <Button mnemonicParsing="false" text="RE" id="RE"/>
+                <Button mnemonicParsing="false" text="MI" id="MI"/>
+                <Button mnemonicParsing="false" text="FA" id="FA"/>
+                <Button mnemonicParsing="false" text="SOL" id="SOL"/>
+                <Button mnemonicParsing="false" text="LA" id="LA"/>
+                <Button mnemonicParsing="false" text="SI" id="SI"/>
+                <Button mnemonicParsing="false" text="DO" id="DO2"/>
+            </children>
+        </HBox>
+        <HBox id="C" layoutX="74.0" layoutY="150.0" prefHeight="100.0" prefWidth="526.0">
+            <children>
+                <Button mnemonicParsing="false" text="DO#" id="DOd"/>
+                <Button mnemonicParsing="false" text="RE#" id="REd"/>
+                <Button mnemonicParsing="false" text="--"/>
+                <Button mnemonicParsing="false" text="FA#" id="FAd"/>
+                <Button mnemonicParsing="false" text="SOL#" id="SOLd"/>
+                <Button mnemonicParsing="false" text="LA#" id="LAd"/>
+                <Button mnemonicParsing="false" text="--"/>
+                <Button mnemonicParsing="false" text="DO#" id="DO2d"/>
             </children>
         </HBox>
     </children>
