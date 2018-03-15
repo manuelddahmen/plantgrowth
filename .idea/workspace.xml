@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fd09acf-54f1-4728-a241-41207a28a4a0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/AppSound.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AppSound.fxml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/configTest.properties" afterPath="$PROJECT_DIR$/configTest.properties" />
-      <change beforePath="$PROJECT_DIR$/plants.iml" afterPath="$PROJECT_DIR$/plants.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/exported-pom.xml" afterPath="$PROJECT_DIR$/target/exported-pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/plant-growth-1.jar" afterPath="$PROJECT_DIR$/target/plant-growth-1.jar" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestBasic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestMethodEqualsSymbol.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestRotation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestRotation2.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestRotation2_methodeBis.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle2DTest.java" afterPath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle2DTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle3D_4Test.java" afterPath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3D_4Test.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3DTest.java" afterPath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3DTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,14 +67,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state relative-caret-position="340">
+              <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Turtle2DTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle2DTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="143" column="13" lean-forward="false" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configTest.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configTest.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Turtle3D_4Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3D_4Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,7 +138,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="132" column="16" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+              <caret line="148" column="16" lean-forward="false" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -189,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Rotation2.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_1.java" />
         <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3D_2Test.java" />
-        <option value="$PROJECT_DIR$/configTest.properties" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/jcalculator/extension/LSystemTreeNode.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Action.java" />
@@ -216,9 +245,12 @@
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java" />
         <option value="$PROJECT_DIR$/src/java/main/AppSound.java" />
         <option value="$PROJECT_DIR$/AppSound.fxml" />
-        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App2.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle2DTest.java" />
+        <option value="$PROJECT_DIR$/configTest.properties" />
+        <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3D_4Test.java" />
       </list>
     </option>
   </component>
@@ -401,6 +433,16 @@
             </path>
             <path>
               <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plants-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="growth" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plants-2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -433,6 +475,9 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.manudahmen.growth" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="be.manudahmen.growth.graphics" />
     </key>
@@ -442,18 +487,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.manudahmen.growth" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Line\IdeaProjects\" />
-      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\main\be\manudahmen\growth" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Line\Pictures" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="be.manudahmen.growth.graphics" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Line\Pictures" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="be.manudahmen.growth" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Line\IdeaProjects\" />
+      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\main\be\manudahmen\growth" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -724,7 +766,7 @@
       <workItem from="1520990349969" duration="8522000" />
       <workItem from="1521003576014" duration="14337000" />
       <workItem from="1521045657164" duration="1313000" />
-      <workItem from="1521051499055" duration="1470000" />
+      <workItem from="1521051499055" duration="2462000" />
     </task>
     <task id="LOCAL-00001" summary="Update pom">
       <created>1518948747006</created>
@@ -992,7 +1034,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521013273081</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="gui starts">
+      <created>1521099684909</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1521099684910</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1028,7 +1077,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217328000" />
+    <option name="totallyTimeSpent" value="218320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1051,21 +1100,24 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3881579" sideWeight="0.49432248" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.4795022" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4795022" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49707174" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49432248" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32072368" sideWeight="0.45344436" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17032552" sideWeight="0.49" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25889477" sideWeight="0.49" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.47464043" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17183952" sideWeight="0.51" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1073,8 +1125,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49707174" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.47464043" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1116,15 +1166,16 @@
     <MESSAGE value="Before all tests: cleaning testResults directory" />
     <MESSAGE value="Dragon curve not working." />
     <MESSAGE value="Audio starts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Audio starts" />
+    <MESSAGE value="gui starts" />
+    <option name="LAST_COMMIT_MESSAGE" value="gui starts" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/Turtle2DTest.java</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle2DTest.java</url>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -1144,9 +1195,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-1092_.3.jpg" />
-    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-1090_.2.jpg" />
-    <entry file="file://$PROJECT_DIR$/testResults/testFractaleKoch-1104_.4.jpg" />
     <entry file="file://$PROJECT_DIR$/testResults/testDragonCurve-1118_.0.jpg" />
     <entry file="file://$PROJECT_DIR$/testResults/testDragonCurve-1130_.0.jpg" />
     <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestBasic.java">
@@ -1334,7 +1382,7 @@
     <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1347,18 +1395,42 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="132" column="16" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+          <caret line="148" column="16" lean-forward="false" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="340">
+          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle2DTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="143" column="13" lean-forward="false" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configTest.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle3D_4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
