@@ -122,6 +122,13 @@
   </repositories>
   <pluginRepositories>
     <pluginRepository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>oss-sonatype-snapshots</id>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+    </pluginRepository>
+    <pluginRepository>
       <releases>
         <updatePolicy>never</updatePolicy>
       </releases>
@@ -323,6 +330,14 @@
         </executions>
         <configuration>
           <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.zenjava</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>8.9.0-SNAPSHOT</version>
+        <configuration>
+          <mainClass>be.manudahmen.growth.App</mainClass>
         </configuration>
       </plugin>
       <plugin>

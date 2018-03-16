@@ -143,6 +143,22 @@
   ~     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
+<!--
+  ~ This file is part of Plants-Growth-2
+  ~     Plants-Growth-2 is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     Plants-Growth-2 is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>be.manudahmen</groupId>
@@ -223,8 +239,17 @@
             <artifactId>jsyn</artifactId>
             <version>20170815</version>
         </dependency>-->
-    </dependencies>
 
+    </dependencies>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>oss-sonatype-snapshots</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
     <name>Plants' growth</name>
     <description>L-System for simulation of plants' growth</description>
     <url>http::/gitlab.com/LaboManu</url>
@@ -325,16 +350,21 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
-            <!--            <plugin>
-                            <groupId>com.zenjava</groupId>
-                            <artifactId>javafx-maven-plugin</artifactId>
-                            <version>8.8.3</version>
-                            <configuration>
-                                <mainClass>be.manudahmen.growth.App</mainClass>
-                            </configuration>
-                        </plugin>
-            -->
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>8.8.3</version>
+                <configuration>
+                    <mainClass>be.manudahmen.growth.App</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>8.9.0-SNAPSHOT</version>
+            </plugin>
         </plugins>
+
         <extensions>
             <!-- Enabling the use of FTP -->
             <extension>
