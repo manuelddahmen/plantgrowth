@@ -305,7 +305,7 @@
               <outputDirectory>C:\Users\Line\IdeaProjects\Plants-2.0/target/</outputDirectory>
               <resources>
                 <resource>
-                  <directory>runscripts/</directory>
+                  <directory>resources</directory>
                   <filtering>true</filtering>
                 </resource>
               </resources>
