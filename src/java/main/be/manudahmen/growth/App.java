@@ -78,6 +78,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import be.manudahmen.growth.audio.SoundProductionSystem;
@@ -91,6 +107,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -103,7 +120,7 @@ import java.net.URL;
 public class App extends Application {
     private Slider slider;
     private SoundProductionSystem soundProductionSystem;
-
+    private ToggleGroup group;
     public static void main(String[] args) {
         launch(args);
     }
@@ -156,17 +173,23 @@ public class App extends Application {
 
         VBox vBox = new VBox();
 
+        group = new ToggleGroup();
+
         RadioButton radioButton = new RadioButton();
         radioButton.setText("Sine");
+        radioButton.setToggleGroup(group);
         vBox.getChildren().add(radioButton);
         radioButton = new RadioButton();
         radioButton.setText("Square");
+        radioButton.setToggleGroup(group);
         vBox.getChildren().add(radioButton);
         radioButton = new RadioButton();
         radioButton.setText("Triangle");
+        radioButton.setToggleGroup(group);
         vBox.getChildren().add(radioButton);
         radioButton = new RadioButton();
         radioButton.setText("Sawtooth");
+        radioButton.setToggleGroup(group);
         vBox.getChildren().add(radioButton);
 
 
@@ -190,35 +213,76 @@ public class App extends Application {
     }
 
     private void playNote(Object source) {
+        String id = ((Button) source).getText();
         String note;
+        int index = 0;
         note = "";
-        switch (((Button) source).getId()) {
+        switch (id.substring(0, 2)) {
             case "do"://DO
                 note = "C";
+                index = 2;
                 break;
             case "re"://RE
                 note = "D";
+                index = 2;
                 break;
             case "mi"://MI
                 note = "E";
+                index = 2;
                 break;
             case "fa"://FA
                 note = "F";
+                index = 2;
                 break;
-            case "sol"://SOL
+            case "so"://SOL
                 note = "G";
+                index = 3;
                 break;
             case "la"://LA
                 note = "A";
+                index = 2;
                 break;
             case "si"://SI
                 note = "B";
+                index = 2;
                 break;
+            default:
+                return;
         }
+        String diese = "";
+        if (index < id.length()) {
+            switch (id.charAt(index)) {
+                case '#':
+                    diese = "#";
+            }
+        }
+        SoundProductionSystem.Waveform waveform = SoundProductionSystem.Waveform.SIN;
+        RadioButton selectedRadioButton = (RadioButton) group.getSelectedToggle();
+        String toogleGroupValue = selectedRadioButton.getText();
+        switch (toogleGroupValue) {
+            case "Sine":
+                waveform = SoundProductionSystem.Waveform.SIN;
+                break;
+            case "Square":
+                waveform = SoundProductionSystem.Waveform.RECT;
+                break;
+            case "Triangle":
+                waveform = SoundProductionSystem.Waveform.TRI;
+                break;
+            case "Sawtooth":
+                waveform = SoundProductionSystem.Waveform.DECAY;
+                break;
+
+        }
+
+
+        System.out.println(note);
         try {
-            soundProductionSystem.playNote(soundProductionSystem.equiv(
-                    "" + note + "" + (int) slider.getValue()), 1000.0f,
-                    SoundProductionSystem.Waveform.SIN);
+            int octave = (int) slider.getValue();
+            int equiv = soundProductionSystem.equiv(
+                    note + octave + diese);
+            soundProductionSystem.playNote(equiv + octave, 1000.0f,
+                    waveform);
         } catch (LineUnavailableException e) {
             e.printStackTrace();
         }
