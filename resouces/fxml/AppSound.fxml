@@ -78,9 +78,9 @@
         <RadioButton layoutX="40.0" layoutY="100.0" mnemonicParsing="false" text="Triangle"/>
         <RadioButton layoutX="40.0" layoutY="120.0" mnemonicParsing="false" text="Decay"/>
         <Slider id="octave" layoutX="33.0" layoutY="159.0" max="8.0" min="1.0" orientation="VERTICAL" value="4.0"/>
-        <HBox id="syntha" layoutX="74.0" layoutY="180.0" prefHeight="30" prefWidth="526.0">
+        <HBox layoutX="74.0" layoutY="180.0" prefHeight="100.0" prefWidth="526.0">
             <children>
-                <Button mnemonicParsing="false" text="DO" id="DO" onAction='#playNote' onMouseClicked="#playNote"/>
+                <Button mnemonicParsing="false" text="DO" id="DO"/>
                 <Button mnemonicParsing="false" text="RE" id="RE"/>
                 <Button mnemonicParsing="false" text="MI" id="MI"/>
                 <Button mnemonicParsing="false" text="FA" id="FA"/>
@@ -90,7 +90,7 @@
                 <Button mnemonicParsing="false" text="DO" id="DO2"/>
             </children>
         </HBox>
-        <HBox id="synthb" layoutX="74.0" layoutY="150.0" prefHeight="30" prefWidth="526.0">
+        <HBox id="C" layoutX="74.0" layoutY="150.0" prefHeight="100.0" prefWidth="526.0">
             <children>
                 <Button mnemonicParsing="false" text="DO#" id="DOd"/>
                 <Button mnemonicParsing="false" text="RE#" id="REd"/>
