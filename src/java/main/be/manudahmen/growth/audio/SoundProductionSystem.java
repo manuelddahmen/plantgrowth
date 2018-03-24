@@ -94,6 +94,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth.audio;
 
 import be.manudahmen.empty3.BSpline;
@@ -106,10 +122,13 @@ import javax.sound.sampled.*;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 
 public class SoundProductionSystem {
-    public void playBuffer(float[] nextBuffer) {
 
+
+    public SourceDataLine getLine() {
+        return sdl;
     }
 
     public enum Waveform {SIN, RECT, DECAY, TRI}
@@ -117,13 +136,12 @@ public class SoundProductionSystem {
     ;
     private boolean fileOutput;
     private File outWavFile;
-    private SourceDataLine sdl;
     private AudioFormat af;
     byte[] buffer;
     AudioInputStream audioInputStream;
     private int buffIdx = 0;
     private final int samplerate = 44100;
-
+    private SourceDataLine sdl;
     public SoundProductionSystem(float secondsFile, File outWavFile) {
         this();
         this.outWavFile = outWavFile;
@@ -203,11 +221,6 @@ public class SoundProductionSystem {
                         break;
 
                 }
-                buf[0] = (byte) (a & 0xFF); //write 8bits ________WWWWWWWW out of 16
-                buf[1] = (byte) (a >> 8); //write 8bits WWWWWWWW________ out of 16
-                buf[2] = (byte) (a & 0xFF); //write 8bits ________WWWWWWWW out of 16
-                buf[3] = (byte) (a >> 8); //write 8bits WWWWWWWW________ out of 16
-                sdl.write(buf, 0, 4);
 
             }
             if (fileOutput) {
