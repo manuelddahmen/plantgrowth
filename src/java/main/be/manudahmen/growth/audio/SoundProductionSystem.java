@@ -62,11 +62,29 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth.audio;
 
 import be.manudahmen.empty3.BSpline;
 import be.manudahmen.empty3.Point3D;
 import be.manudahmen.empty3.core.nurbs.BSplineCurve;
+import be.manudahmen.empty3.core.nurbs.CourbeParametriquePolynomialeBezier;
+import be.manudahmen.empty3.core.tribase.Tubulaire;
 
 import javax.sound.sampled.*;
 import java.io.ByteArrayInputStream;
@@ -116,33 +134,38 @@ public class SoundProductionSystem {
 
             byte[] buf = new byte[4];
 
+
+            Tubulaire tubulaire = new Tubulaire();
+            Point3D[] points;
+            CourbeParametriquePolynomialeBezier bezier = new
+                    CourbeParametriquePolynomialeBezier(
+                    points = new Point3D[]{
+                            new Point3D(0.0, 0.0, 0.0),
+                            new Point3D(0.0, 0.0, 0.0),
+                            new Point3D(0.0, 1.0, durationMs / 10),
+                            new Point3D(0.0, 1.0, durationMs / 2),
+                            new Point3D(0.0, 1.0, durationMs * 3 / 4.0),
+                            new Point3D(0.0, 0.2, durationMs * 7 / 10.0),
+                            new Point3D(0.0, 0.0, durationMs)
+                    });
+            for (int i = 0; i < points.length; i++)
+                tubulaire.add(points[i]);
+
 /*
-            BSpline bSplineCurve = new BSpline();
-            bSplineCurve.add(new Point3D(0.0, 0.0, 0.0));
-            bSplineCurve.add(new Point3D(0.0, 1.0, durationMs/10));
-            bSplineCurve.add(new Point3D(0.0, 1.0, durationMs/2));
-            bSplineCurve.add(new Point3D(0.0, 1.0, durationMs*3/4.0));
-            bSplineCurve.add(new Point3D(0.0, 0.2, durationMs*7/10.0));
-            bSplineCurve.add(new Point3D(0.0, 0.0, durationMs));
-            bSplineCurve.setDegree(6);
+            tubulaire.generateWire();
+
+            tubulaire.nbrAnneaux(100);
+            tubulaire.nbrRotations(100);
 */
-
-            BSplineCurve bSplineCurve = new BSplineCurve();
-            bSplineCurve.add(0.0, new Point3D(0.0, 0.0, 0.0));
-            bSplineCurve.add(0.1, new Point3D(0.0, 1.0, durationMs / 10));
-            bSplineCurve.add(0.3, new Point3D(0.0, 1.0, durationMs / 2));
-            bSplineCurve.add(0.0, new Point3D(0.0, 1.0, durationMs * 3 / 4.0));
-            bSplineCurve.add(0.5, new Point3D(0.0, 0.2, durationMs * 7 / 10.0));
-            bSplineCurve.add(0.1, new Point3D(0.0, 0.0, durationMs));
-            System.out.println(bSplineCurve.calculerPoint3D(0.1));
-
             for (int i = 0; i < durationMs * 44100 / 1000.0; i++) {
                 double angle = i / (44100.0 / calculateNoteFrequency(tone)) * 2.0 * Math.PI;
 
 
-                double facteurAmpl = bSplineCurve.calculerPoint3D(0.001 * i).getY();
+                double facteurAmpl = bezier.calculerPoint3D(1.0 * i / 44100f * 1000f / durationMs).getY();
 
-                double ampl = 32767;//*facteurAmpl;
+                //System.out.println("Facteur Amplitude: "+facteurAmpl);
+
+                double ampl = 32767f * facteurAmpl;
 
                 short a;
                 switch (type) {
