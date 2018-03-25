@@ -126,6 +126,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth;
 
 import be.manudahmen.growth.audio.Player;
@@ -141,6 +157,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -196,12 +213,19 @@ public class App extends Application {
             buttons[i].setLayoutX(100 + i * 30);
             buttons[i].setLayoutY(150 + (i >= 8 ? 30 : 0));
             buttons[i].setId("Button" + i);
-            buttons[i].setOnAction(new EventHandler<ActionEvent>() {
+            buttons[i].setOnMousePressed(new EventHandler<MouseEvent>() {
                 @Override
-                public void handle(ActionEvent event) {
+                public void handle(MouseEvent event) {
                     playNote(event.getSource());
                 }
             });
+            buttons[i].setOnMouseReleased(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    stopNote(event.getSource());
+                }
+            });
+
             pane[i < 8 ? 0 : 1].getChildren().add(buttons[i]);
         }
 
@@ -246,9 +270,11 @@ public class App extends Application {
         primaryStage.setTitle("FXML Welcome");
         primaryStage.setScene(scene1);
         primaryStage.show();
+
+        player.start();
     }
 
-    private void playNote(Object source) {
+    public int getTone(Object source) {
         String id = ((Button) source).getText();
         String note;
         int index = 0;
@@ -283,7 +309,7 @@ public class App extends Application {
                 index = 2;
                 break;
             default:
-                return;
+                return 0;
         }
         String diese = "";
         if (index < id.length()) {
@@ -292,6 +318,18 @@ public class App extends Application {
                     diese = "#";
             }
         }
+
+
+        System.out.println(note);
+        int octave = (int) slider.getValue();
+        int equiv = soundProductionSystem.equiv(
+                note + octave + diese);
+
+
+        return soundProductionSystem.equiv(equiv + octave + diese);
+    }
+
+    public SoundProductionSystem.Waveform getForm() {
         SoundProductionSystem.Waveform waveform = SoundProductionSystem.Waveform.SIN;
         RadioButton selectedRadioButton = (RadioButton) group.getSelectedToggle();
         String toogleGroupValue = selectedRadioButton.getText();
@@ -310,15 +348,18 @@ public class App extends Application {
                 break;
 
         }
+        return waveform;
+    }
 
+    private void playNote(Object source) {
 
-        System.out.println(note);
-            int octave = (int) slider.getValue();
-            int equiv = soundProductionSystem.equiv(
-                    note + octave + diese);
-        player.addNote(equiv + octave, 1000.0f,
-                    waveform);
+        player.addNote(getTone(source), 1000.0f,
+                getForm());
 
+    }
+
+    private void stopNote(Object source) {
+        player.stopNote(getTone(source));
     }
 
 }
