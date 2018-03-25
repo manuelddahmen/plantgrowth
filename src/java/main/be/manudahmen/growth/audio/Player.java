@@ -94,6 +94,22 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * This file is part of Plants-Growth-2
+ *     Plants-Growth-2 is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Plants-Growth-2 is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package be.manudahmen.growth.audio;
 
 import javafx.application.Platform;
@@ -137,8 +153,8 @@ public class Player extends Thread {
         double total = 0;
         double facteurAmpl = 0;
         short a = 0;
-        for (Note note : currentNotes) {
-            if (note.getDurationMs() + timer.getTimeEllapsedMS() <= note.getTimer().getTimeEllapsedMS()) {
+        for (Note note : getCurrentNotes()) {
+            if (note.getTime() < note.getTimer().getTimeTotal()) {
 
                 double index = note.getTimer().getTimeEllapsedMS() * 44100 / 1000.0;
 
@@ -209,16 +225,19 @@ public class Player extends Thread {
 
     public void addNote(int tone, float durationMs, SoundProductionSystem.Waveform waveform) {
         Note note = new Note(durationMs, tone, waveform, new Enveloppe(1000f));
+        Timer timer = new Timer();
         note.setTimer(timer);
+        timer.init();
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
                 getCurrentNotes().add(note);
+                System.out.println("After added " + getCurrentNotes().size());
             }
         });
     }
     public void stopNote(int tone) {
-        currentNotes.forEach(new Consumer<Note>() {
+        getCurrentNotes().forEach(new Consumer<Note>() {
             @Override
             public void accept(Note note) {
                 if (note.getTone() == tone) {
@@ -226,7 +245,7 @@ public class Player extends Thread {
                         @Override
                         public void run() {
                             getCurrentNotes().remove(note);
-
+                            System.out.println("After removed " + getCurrentNotes().size());
                         }
                     });
                 }
@@ -235,7 +254,6 @@ public class Player extends Thread {
     }
 
     public List<Note> getCurrentNotes() {
-        System.out.println("notes size: " + currentNotes.size());
         return currentNotes;
     }
 }
