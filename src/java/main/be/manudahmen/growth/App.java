@@ -13,23 +13,6 @@
  *     You should have received a copy of the GNU General Public License
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 package be.manudahmen.growth;
 
 import be.manudahmen.growth.audio.AudioViewer;
@@ -37,7 +20,6 @@ import be.manudahmen.growth.audio.Player;
 import be.manudahmen.growth.audio.SoundProductionSystem;
 import javafx.application.Application;
 import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -46,16 +28,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 
 public class App extends Application {
     private Slider slider;
@@ -73,17 +48,12 @@ public class App extends Application {
     public void start(Stage primaryStage) {
 
         soundProductionSystem = new SoundProductionSystem();
-        Parent root = null;
-        try {
-            URL location = new File("C:\\Users\\Line\\IdeaProjects\\Plants-2.0\\src\\java\\main\\be\\manudahmen\\growth\\AppSound.fxml").toURL();
-            assert location != null;
-            FXMLLoader fxmlLoader = new FXMLLoader(location);
-            root = fxmlLoader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Parent root = new AnchorPane();
 
-        Scene scene = new Scene(root, 300, 275);
+        root.minWidth(800);
+        root.minHeight(600);
+
+        Scene scene = new Scene(root);
 
         Button[] buttons = new Button[16];
 
@@ -174,10 +144,10 @@ public class App extends Application {
         bl.setBottom(pane1);
 
 
-        Scene scene1 = new Scene(bl);
+        scene.setRoot(bl);
 
         primaryStage.setTitle("Plants 2.0 synth");
-        primaryStage.setScene(scene1);
+        primaryStage.setScene(scene);
         //primaryStage.setFullScreen(true);
         //primaryStage.setMaximized(true);
         primaryStage.show();
@@ -187,7 +157,7 @@ public class App extends Application {
             public void handle(WindowEvent event) {
                 player.setPlaying(false);
                 audioViewer.setRunning(false);
-                //System.exit(0);
+                System.exit(0);
             }
         });
 

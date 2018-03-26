@@ -6,6 +6,7 @@ public class Note {
     private Enveloppe enveloppe;
     private Timer timer;
     private double minDurationMs;
+    private boolean finish;
 
     public Note(double minDurationMs, int tone, SoundProductionSystem.Waveform waveform, Enveloppe enveloppe) {
         this.minDurationMs = minDurationMs;
@@ -16,11 +17,11 @@ public class Note {
         timer.init();
     }
 
-    public double getDurationMs() {
+    public double getMinDurationMs() {
         return minDurationMs;
     }
 
-    public void setDurationMs(double minDurationMs) {
+    public void setMinDurationMs(double minDurationMs) {
         this.minDurationMs = minDurationMs;
     }
 
@@ -57,4 +58,7 @@ public class Note {
         return timer;
     }
 
+    public boolean isFinish() {
+        return getTimer().getTimeElapsedMS() >= this.getMinDurationMs();
+    }
 }

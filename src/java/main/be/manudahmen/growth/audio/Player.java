@@ -156,8 +156,8 @@ public class Player extends Thread {
 
     public synchronized void playCurrentNotes() {
         getCurrentNotes().forEach(note -> {
-            if (note.getTimer().getTimeEllapsedMS() < note.getDurationMs()) {
-                double noteTimeMS = note.getTimer().getTimeEllapsedMS();
+                    if (!note.isFinish()) {
+                        double noteTimeMS = note.getTimer().getTimeElapsedMS();
 
                 double position = noteTimeMS / 44100 / 1000.0;
 
@@ -255,6 +255,8 @@ public class Player extends Thread {
                     Platform.runLater(new Runnable() {
                         @Override
                         public void run() {
+                            while (!note.isFinish())
+                                ;
                             getCurrentNotes().remove(note);
                             System.out.println("After removed " + getCurrentNotes().size());
                         }

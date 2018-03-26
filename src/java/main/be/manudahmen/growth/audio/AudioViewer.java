@@ -64,7 +64,8 @@ public class AudioViewer extends Thread {
                                     position,
                                     newValues[i] / max * maxHeight + pos0Y
                             };
-                    graphicsContext2D.setStroke(Color.BLACK);
+                    double colorRatio = i % (channels + 1);
+                    graphicsContext2D.setStroke(Color.color(colorRatio, colorRatio, colorRatio));
                     graphicsContext2D.strokeLine(toDraw[0], toDraw[1],
                             toDraw[2], toDraw[3]);
                 }
