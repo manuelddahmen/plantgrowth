@@ -126,6 +126,7 @@ public class Player extends Thread {
     private SoundProductionSystem soundProductionSystem;
     private Player that;
     private AudioViewer audioViewer;
+
     public synchronized List<Note> notes()
 
     {
@@ -159,31 +160,31 @@ public class Player extends Thread {
                     if (!note.isFinish()) {
                         double noteTimeMS = note.getTimer().getTimeElapsedMS();
 
-                double position = noteTimeMS / 44100 / 1000.0;
+                        double position = note.getPositionNIncr() / 44100.0;
 
-                double angle = position * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
+                        double angle = position * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
 
-                facteurAmpl = note.getEnveloppe().getVolume(noteTimeMS);
+                        facteurAmpl = note.getEnveloppe().getVolume(noteTimeMS);
 
-                double ampl = 32767f * facteurAmpl;
+                        double ampl = 32767f * facteurAmpl;
 
-                switch (note.getWaveform()) {
-                    case SIN: // SIN
-                        total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                        break;
-                    case RECT: // RECT
-                        total += (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    case SAWTOOTH: // SAWTOOTH LINEAR
-                        total += ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    case TRI: // TRIANGLE LINEAR
-                        total += ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
-                    default: // SIN
-                        total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                        break;
+                        switch (note.getWaveform()) {
+                            case SIN: // SIN
+                                total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                                break;
+                            case RECT: // RECT
+                                total += (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                            case SAWTOOTH: // SAWTOOTH LINEAR
+                                total += ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                            case TRI: // TRIANGLE LINEAR
+                                total += ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
+                            default: // SIN
+                                total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                                break;
 
+                        }
+                    }
                 }
-            }
-        }
         );
         total /= Math.sqrt(currentNotes.size() > 0 ? currentNotes.size() : 1);
 
@@ -233,8 +234,8 @@ public class Player extends Thread {
         this.playing = playing;
     }
 
-    public synchronized void addNote(int tone, float durationMs, SoundProductionSystem.Waveform waveform) {
-        Note note = new Note(durationMs, tone, waveform, new Enveloppe(1000f));
+    public synchronized void addNote(int tone, float minDurationMs, SoundProductionSystem.Waveform waveform) {
+        Note note = new Note(minDurationMs, tone, waveform, new Enveloppe(minDurationMs));
         Timer timer = new Timer();
         note.setTimer(timer);
         timer.init();

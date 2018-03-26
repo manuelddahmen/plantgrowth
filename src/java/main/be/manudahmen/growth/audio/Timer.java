@@ -24,7 +24,7 @@ package be.manudahmen.growth.audio;
 public class Timer {
     private long timeElapsed = 0;
     private long timeElapsedSystem = 0;
-    private double initTime;
+
 
     public Timer() {
     }
@@ -42,14 +42,5 @@ public class Timer {
         return timeElapsed / 1000000.0;
     }
 
-    public double getTimeTotal() {
-        return timeElapsedSystem;
-    }
-    public void reset() {
-        init();
-    }
 
-    public double getInitTime() {
-        return initTime;
-    }
 }
