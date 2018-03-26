@@ -124,19 +124,20 @@ public class Player extends Thread {
     private boolean playing;
     private SoundProductionSystem soundProductionSystem;
     private Player that;
-
+    private AudioViewer audioViewer;
     public synchronized List<Note> notes()
 
     {
         return currentNotes;
     }
 
-    public Player() {
+    public Player(AudioViewer audioViewer) {
         soundProductionSystem = new SoundProductionSystem();
         currentNotes = new ArrayList<>();
         timer = new Timer();
         timer.init();
         playing = true;
+        this.audioViewer = audioViewer;
         that = this;
     }
 
@@ -153,33 +154,41 @@ public class Player extends Thread {
         double facteurAmpl = 0;
         short a = 0;
         for (Note note : getCurrentNotes()) {
+            if (note.getTimer().getTimeEllapsedMS() < note.getDurationMs()) {
+                double index = note.getTimer().getTimeEllapsedMS() * 44100 / 1000.0;
 
-            double index = note.getTimer().getTimeEllapsedMS() * 44100 / 1000.0;
+                double angle = index * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
 
-            double angle = index * note.getTimer().getTimeEllapsedMS() / (44100.0 / soundProductionSystem.calculateNoteFrequency(note.getTone())) * 2.0 * Math.PI;
+                facteurAmpl += note.getEnveloppe().getVolume(note.getTimer().getTimeEllapsedMS());
 
-            facteurAmpl += note.getEnveloppe().getVolume(note.getTimer().getTimeEllapsedMS());
+                double ampl = 32767f * facteurAmpl;
 
-            double ampl = 32767f * facteurAmpl;
+                switch (note.getWaveform()) {
+                    case SIN: // SIN
+                        total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                        break;
+                    case RECT: // RECT
+                        total += (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                    case SAWTOOTH: // SAWTOOTH LINEAR
+                        total += ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                    case TRI: // TRIANGLE LINEAR
+                        total += ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
+                    default: // SIN
+                        total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                        break;
 
-            switch (note.getWaveform()) {
-                case SIN: // SIN
-                    total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    break;
-                case RECT: // RECT
-                    total += (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                case DECAY: // DECAY LINEAR
-                    total += ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                case TRI: // DECAY LINEAR
-                    total += ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
-                default: // SIN
-                    total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    break;
-
+                }
             }
-
         }
         total /= Math.sqrt(currentNotes.size() > 0 ? currentNotes.size() : 1);
+
+        if (audioViewer != null) {
+            audioViewer.sendDouble(new Double[]
+                    {
+                            total, total
+                    }
+            );
+        }
 
         short amplitude = (short) total;
 
@@ -195,7 +204,6 @@ public class Player extends Thread {
         nextBuffer[3] = (byte) (a >> 8); //write 8bits WWWWWWWW________ out of 16
         try {
             soundProductionSystem.getLine().write(nextBuffer, 0, 4);
-            //System.out.println("bytes written : 4" + amplitude);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -251,7 +259,7 @@ public class Player extends Thread {
         });
     }
 
-    public List<Note> getCurrentNotes() {
+    public synchronized List<Note> getCurrentNotes() {
         return currentNotes;
     }
 }

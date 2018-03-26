@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fd09acf-54f1-4728-a241-41207a28a4a0" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/AudioViewer.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" />
       <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java" afterPath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,12 +28,12 @@
       <file leaf-file-name="SoundProductionSystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+            <state relative-caret-position="121">
+              <caret line="130" column="45" lean-forward="false" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
               <folding>
-                <element signature="e#0#11284#0" expanded="true" />
-                <element signature="e#5714#5715#0" expanded="true" />
-                <element signature="e#5740#5741#0" expanded="true" />
+                <element signature="e#0#11178#0" expanded="true" />
+                <element signature="e#5596#5597#0" expanded="true" />
+                <element signature="e#5622#5623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,12 +42,13 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
-              <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="188" column="28" lean-forward="true" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
               <folding>
-                <element signature="e#0#7990#0" expanded="true" />
-                <element signature="e#7936#7937#0" expanded="true" />
-                <element signature="e#7984#7985#0" expanded="true" />
+                <element signature="e#0#8657#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#8603#8604#0" expanded="true" />
+                <element signature="e#8651#8652#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,57 +70,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+            <state relative-caret-position="-185">
+              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
-                <element signature="e#0#9925#0" expanded="true" />
+                <element signature="e#0#10283#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#5647#5648#0" expanded="true" />
-                <element signature="e#5682#5683#0" expanded="true" />
-                <element signature="e#5948#5949#0" expanded="true" />
-                <element signature="e#5986#5987#0" expanded="true" />
-                <element signature="e#6024#6025#0" expanded="true" />
-                <element signature="e#6103#6104#0" expanded="true" />
-                <element signature="e#8553#8554#0" expanded="true" />
-                <element signature="e#8583#8584#0" expanded="true" />
-                <element signature="e#8616#8617#0" expanded="true" />
-                <element signature="e#8649#8650#0" expanded="true" />
-                <element signature="e#8696#8697#0" expanded="true" />
-                <element signature="e#8734#8735#0" expanded="true" />
-                <element signature="e#9886#9887#0" expanded="true" />
-                <element signature="e#9921#9922#0" expanded="true" />
+                <element signature="e#5658#5659#0" expanded="true" />
+                <element signature="e#5693#5694#0" expanded="true" />
+                <element signature="e#6022#6023#0" expanded="true" />
+                <element signature="e#6060#6061#0" expanded="true" />
+                <element signature="e#6098#6099#0" expanded="true" />
+                <element signature="e#6177#6178#0" expanded="true" />
+                <element signature="e#8898#8899#0" expanded="true" />
+                <element signature="e#8928#8929#0" expanded="true" />
+                <element signature="e#8961#8962#0" expanded="true" />
+                <element signature="e#8994#8995#0" expanded="true" />
+                <element signature="e#9041#9042#0" expanded="true" />
+                <element signature="e#9079#9080#0" expanded="true" />
+                <element signature="e#10244#10245#0" expanded="true" />
+                <element signature="e#10279#10280#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Note.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AudioViewer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/AudioViewer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3033#3034#0" expanded="true" />
+                <element signature="e#3072#3073#0" expanded="true" />
+                <element signature="e#3106#3107#0" expanded="true" />
+                <element signature="e#3136#3137#0" expanded="true" />
+                <element signature="e#3183#3184#0" expanded="true" />
+                <element signature="e#3221#3222#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Note.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="725">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding>
                 <element signature="e#574#575#0" expanded="true" />
                 <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1167#1168#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1337#1338#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_2.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Turtle3D_3.java" />
         <option value="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/TestCaseExtended.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/graphics/Drawing.java" />
@@ -227,11 +247,12 @@
         <option value="$PROJECT_DIR$/src/java/main/AppSound.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/AppSound.fxml" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Enveloppe.java" />
-        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java" />
-        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Timer.java" />
-        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java" />
         <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/AudioViewer.java" />
+        <option value="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" />
       </list>
     </option>
   </component>
@@ -438,10 +459,6 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="be.manudahmen.growth.audio" />
-      <recent name="be.manudahmen.growth" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="be.manudahmen.growth.graphics" />
     </key>
@@ -451,6 +468,10 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.manudahmen.growth" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Line\IdeaProjects\" />
+      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\main\be\manudahmen\growth" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\resouces\fxml" />
       <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\test\be\manudahmen\growth\test" />
@@ -459,9 +480,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="be.manudahmen.growth.graphics" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Line\IdeaProjects\" />
-      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\main\be\manudahmen\growth" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.manudahmen.growth.audio" />
+      <recent name="be.manudahmen.growth" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -720,14 +741,7 @@
       <workItem from="1521278881718" duration="7191000" />
       <workItem from="1521397937500" duration="1235000" />
       <workItem from="1521658783940" duration="23361000" />
-      <workItem from="1521909158976" duration="12879000" />
-    </task>
-    <task id="LOCAL-00003" summary="Turtle2D">
-      <created>1519163771513</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1519163771513</updated>
+      <workItem from="1521909158976" duration="18377000" />
     </task>
     <task id="LOCAL-00004" summary="Done">
       <created>1519166442796</created>
@@ -1065,7 +1079,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521980435474</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Now SOUND Begins...">
+      <created>1522054189292</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1522054189293</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1101,7 +1122,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272077000" />
+    <option name="totallyTimeSpent" value="277575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1117,7 +1138,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49735048" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32072368" sideWeight="0.71763813" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32072368" sideWeight="0.7327782" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23694171" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32778198" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1129,15 +1150,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3881579" sideWeight="0.49432248" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49735048" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.28766087" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.2702498" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49129447" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49129447" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32072368" sideWeight="0.28236184" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32072368" sideWeight="0.2672218" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49432248" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25738078" sideWeight="0.49" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.47161242" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1148,14 +1170,10 @@
       <window_info id="Hierarchy" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.47464043" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="UpdateCopyrightCheckinHandler">
-    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1192,6 +1210,7 @@
     <MESSAGE value="JavaFX runs with File(absolute path)" />
     <MESSAGE value="Now SOUND Begins..." />
     <option name="LAST_COMMIT_MESSAGE" value="Now SOUND Begins..." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1219,7 +1238,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testResults/testDragonCurve-1204_.5.jpg" />
     <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23">
@@ -1485,6 +1503,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="154" column="24" lean-forward="false" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1527,14 +1546,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+        <state relative-caret-position="121">
+          <caret line="130" column="45" lean-forward="false" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
           <folding>
-            <element signature="e#0#11284#0" expanded="true" />
-            <element signature="e#5714#5715#0" expanded="true" />
-            <element signature="e#5740#5741#0" expanded="true" />
+            <element signature="e#0#11178#0" expanded="true" />
+            <element signature="e#5596#5597#0" expanded="true" />
+            <element signature="e#5622#5623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1553,66 +1599,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/AudioViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3033#3034#0" expanded="true" />
+            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#3106#3107#0" expanded="true" />
+            <element signature="e#3136#3137#0" expanded="true" />
+            <element signature="e#3183#3184#0" expanded="true" />
+            <element signature="e#3221#3222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state relative-caret-position="257">
+          <caret line="188" column="28" lean-forward="true" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
           <folding>
-            <element signature="e#0#7990#0" expanded="true" />
-            <element signature="e#7936#7937#0" expanded="true" />
-            <element signature="e#7984#7985#0" expanded="true" />
+            <element signature="e#0#8657#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8603#8604#0" expanded="true" />
+            <element signature="e#8651#8652#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        <state relative-caret-position="-185">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9925#0" expanded="true" />
+            <element signature="e#0#10283#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#5682#5683#0" expanded="true" />
-            <element signature="e#5948#5949#0" expanded="true" />
-            <element signature="e#5986#5987#0" expanded="true" />
-            <element signature="e#6024#6025#0" expanded="true" />
-            <element signature="e#6103#6104#0" expanded="true" />
-            <element signature="e#8553#8554#0" expanded="true" />
-            <element signature="e#8583#8584#0" expanded="true" />
-            <element signature="e#8616#8617#0" expanded="true" />
-            <element signature="e#8649#8650#0" expanded="true" />
-            <element signature="e#8696#8697#0" expanded="true" />
-            <element signature="e#8734#8735#0" expanded="true" />
-            <element signature="e#9886#9887#0" expanded="true" />
-            <element signature="e#9921#9922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#5658#5659#0" expanded="true" />
+            <element signature="e#5693#5694#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6060#6061#0" expanded="true" />
+            <element signature="e#6098#6099#0" expanded="true" />
+            <element signature="e#6177#6178#0" expanded="true" />
+            <element signature="e#8898#8899#0" expanded="true" />
+            <element signature="e#8928#8929#0" expanded="true" />
+            <element signature="e#8961#8962#0" expanded="true" />
+            <element signature="e#8994#8995#0" expanded="true" />
+            <element signature="e#9041#9042#0" expanded="true" />
+            <element signature="e#9079#9080#0" expanded="true" />
+            <element signature="e#10244#10245#0" expanded="true" />
+            <element signature="e#10279#10280#0" expanded="true" />
           </folding>
         </state>
       </provider>

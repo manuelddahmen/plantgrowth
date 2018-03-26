@@ -112,9 +112,7 @@
 
 package be.manudahmen.growth.audio;
 
-import be.manudahmen.empty3.BSpline;
 import be.manudahmen.empty3.Point3D;
-import be.manudahmen.empty3.core.nurbs.BSplineCurve;
 import be.manudahmen.empty3.core.nurbs.CourbeParametriquePolynomialeBezier;
 import be.manudahmen.empty3.core.tribase.Tubulaire;
 
@@ -122,7 +120,6 @@ import javax.sound.sampled.*;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 
 public class SoundProductionSystem {
 
@@ -131,7 +128,7 @@ public class SoundProductionSystem {
         return sdl;
     }
 
-    public enum Waveform {SIN, RECT, DECAY, TRI}
+    public enum Waveform {SIN, RECT, SAWTOOTH, TRI}
 
     ;
     private boolean fileOutput;
@@ -212,9 +209,9 @@ public class SoundProductionSystem {
                         break;
                     case RECT: // RECT
                         a = (short) (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    case DECAY: // DECAY LINEAR
+                    case SAWTOOTH: // SAWTOOTH LINEAR
                         a = (short) ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    case TRI: // DECAY LINEAR
+                    case TRI: // SAWTOOTH LINEAR
                         a = (short) ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
                     default: // SIN
                         a = (short) (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)

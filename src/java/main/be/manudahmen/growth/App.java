@@ -32,25 +32,27 @@
 
 package be.manudahmen.growth;
 
+import be.manudahmen.growth.audio.AudioViewer;
 import be.manudahmen.growth.audio.Player;
 import be.manudahmen.growth.audio.SoundProductionSystem;
 import javafx.application.Application;
-import javafx.event.*;
-import javafx.fxml.FXML;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
-import javax.sound.sampled.LineUnavailableException;
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -59,7 +61,9 @@ public class App extends Application {
     private Slider slider;
     private SoundProductionSystem soundProductionSystem;
     private ToggleGroup group;
-    private Player player = new Player();
+    private Player player;
+    private Canvas canvas;
+    private AudioViewer audioViewer;
 
     public static void main(String[] args) {
         launch(args);
@@ -67,6 +71,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
         soundProductionSystem = new SoundProductionSystem();
         Parent root = null;
         try {
@@ -153,12 +158,38 @@ public class App extends Application {
 
         bl.setRight(slider);
 
+        Pane pane1 = new Pane();
+
+        canvas = new Canvas();
+
+        canvas.setWidth(640);
+        canvas.setHeight(480);
+
+        pane1.getChildren().add(canvas);
+
+        audioViewer = new AudioViewer(44100, 2, canvas);
+
+        player = new Player(audioViewer);
+
+        bl.setBottom(pane1);
+
+
         Scene scene1 = new Scene(bl);
 
-        primaryStage.setTitle("FXML Welcome");
+        primaryStage.setTitle("Plants 2.0 synth");
         primaryStage.setScene(scene1);
+        primaryStage.setFullScreen(true);
         primaryStage.show();
 
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent event) {
+                player.setPlaying(false);
+                //System.exit(0);
+            }
+        });
+
+        audioViewer.start();
         player.start();
     }
 
@@ -233,7 +264,7 @@ public class App extends Application {
                 waveform = SoundProductionSystem.Waveform.TRI;
                 break;
             case "Sawtooth":
-                waveform = SoundProductionSystem.Waveform.DECAY;
+                waveform = SoundProductionSystem.Waveform.SAWTOOTH;
                 break;
 
         }
