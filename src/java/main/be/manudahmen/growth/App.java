@@ -257,7 +257,7 @@ public class App extends Application {
     }
 
     private void playNote(Object source) {
-        player.addNote(getTone(source), 1000.0f);
+        player.addNote(getTone(source), 1.0);
 
     }
 

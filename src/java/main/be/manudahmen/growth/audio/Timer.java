@@ -34,12 +34,12 @@ public class Timer {
         timeElapsed = 0;
     }
 
-    public double getTimeElapsedMS() {
+    public double getTimeElapsed() {
         long timeInter = System.nanoTime();
 
         timeElapsed = (timeInter - timeElapsedSystem);
 
-        return timeElapsed / 1000000.0;
+        return timeElapsed / 10E9;
     }
 
 

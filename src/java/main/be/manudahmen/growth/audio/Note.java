@@ -5,12 +5,12 @@ public class Note {
     private SoundProductionSystem.Waveform waveform;
     private Enveloppe enveloppe;
     private Timer timer;
-    private double minDurationMs;
+    private double minDuration;
     private boolean finish;
     private long positionNIncr;
 
-    public Note(double minDurationMs, int tone, SoundProductionSystem.Waveform waveform, Enveloppe enveloppe) {
-        this.minDurationMs = minDurationMs;
+    public Note(double minDuration, int tone, SoundProductionSystem.Waveform waveform, Enveloppe enveloppe) {
+        this.minDuration = minDuration;
         this.tone = tone;
         this.waveform = waveform;
         this.enveloppe = enveloppe;
@@ -19,12 +19,12 @@ public class Note {
         timer.init();
     }
 
-    public double getMinDurationMs() {
-        return minDurationMs;
+    public double getMinDuration() {
+        return minDuration;
     }
 
-    public void setMinDurationMs(double minDurationMs) {
-        this.minDurationMs = minDurationMs;
+    public void setMinDuration(double minDuration) {
+        this.minDuration = minDuration;
     }
 
     public int getTone() {
@@ -61,7 +61,7 @@ public class Note {
     }
 
     public boolean isFinish() {
-        return getTimer().getTimeElapsedMS() >= this.getMinDurationMs();
+        return getTimer().getTimeElapsed() >= this.getMinDuration();
     }
 
     public long getPositionNIncr() {

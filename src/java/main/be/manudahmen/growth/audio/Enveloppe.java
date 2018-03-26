@@ -36,38 +36,38 @@ import be.manudahmen.empty3.Point3D;
 import be.manudahmen.empty3.core.nurbs.CourbeParametriquePolynomialeBezier;
 
 public class Enveloppe {
-    private final double minDurationMs;
+    private final double minDuration;
     private CourbeParametriquePolynomialeBezier form;
     private boolean release = false;
     private boolean end = false;
     Point3D[] points;
     private double time;
 
-    public Enveloppe(double minDurationMs) {
-        this.minDurationMs = minDurationMs;
+    public Enveloppe(double minDuration) {
+        this.minDuration = minDuration;
 
         form = new
                 CourbeParametriquePolynomialeBezier(
                 points = new Point3D[]{
                         new Point3D(0.0, 0.0, 0.0),
                         new Point3D(0.0, 0.0, 0.0),
-                        new Point3D(0.0, 1.0, minDurationMs / 10),
-                        new Point3D(0.0, 1.0, minDurationMs / 2),
-                        new Point3D(0.0, 1.0, minDurationMs * 3 / 4.0),
-                        new Point3D(0.0, 0.2, minDurationMs * 7 / 10.0),
-                        new Point3D(0.0, 0.0, minDurationMs)
+                        new Point3D(0.0, 1.0, minDuration / 10),
+                        new Point3D(0.0, 1.0, minDuration / 2),
+                        new Point3D(0.0, 1.0, minDuration * 3 / 4.0),
+                        new Point3D(0.0, 0.2, minDuration * 7 / 10.0),
+                        new Point3D(0.0, 0.0, minDuration)
                 });
 
     }
 
-    public double getVolume(double durationMs) {
-        if (!isRelease() && durationMs < minDurationMs / 2) {
-            return form.calculerPoint3D(durationMs).getY();
-        } else if (!isRelease() && durationMs > minDurationMs) {
-            time = durationMs;
+    public double getVolume(double duration) {
+        if (!isRelease() && duration < minDuration / 2) {
+            return form.calculerPoint3D(duration).getY();
+        } else if (!isRelease() && duration > minDuration) {
+            time = duration;
             return 1.0;
         } else if (isRelease()) {
-            double facteurAmpl = form.calculerPoint3D(durationMs - time).getY();
+            double facteurAmpl = form.calculerPoint3D(duration - time).getY();
             if (facteurAmpl <= 0.0)
                 fireEndEvent();
         }

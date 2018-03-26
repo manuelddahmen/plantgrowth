@@ -65,13 +65,13 @@ public class Player extends Thread {
     public synchronized void playCurrentNotes() {
         getCurrentNotes().forEach(note -> {
                     if (!note.isFinish()) {
-                        double noteTimeMS = note.getTimer().getTimeElapsedMS();
+                        double noteTime = note.getTimer().getTimeElapsed();
 
                         double positionRatioPerSecond = note.getPositionNIncr() / 44100.0;
 
                         double angle = positionRatioPerSecond * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
 
-                        facteurAmpl = note.getEnveloppe().getVolume(noteTimeMS / 1000.0);
+                        facteurAmpl = note.getEnveloppe().getVolume(noteTime);
 
                         double ampl = 32767f * facteurAmpl;
 
@@ -141,8 +141,8 @@ public class Player extends Thread {
         this.playing = playing;
     }
 
-    public synchronized void addNote(int tone, float minDurationMs) {
-        Note note = new Note(minDurationMs, tone, waveform, new Enveloppe(minDurationMs));
+    public synchronized void addNote(int tone, double minDuration) {
+        Note note = new Note(minDuration, tone, waveform, new Enveloppe(minDuration));
 
         Timer timer = new Timer();
         note.setTimer(timer);
