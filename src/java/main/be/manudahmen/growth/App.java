@@ -19,6 +19,7 @@ import be.manudahmen.growth.audio.AudioViewer;
 import be.manudahmen.growth.audio.Player;
 import be.manudahmen.growth.audio.SoundProductionSystem;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -28,6 +29,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
@@ -37,7 +39,6 @@ public class App extends Application {
     private SoundProductionSystem soundProductionSystem;
     private ToggleGroup group;
     private Player player;
-    private Canvas canvas;
     private AudioViewer audioViewer;
 
     public static void main(String[] args) {
@@ -101,6 +102,13 @@ public class App extends Application {
         radioButton.setText("Sine");
         radioButton.setToggleGroup(group);
         radioButton.setSelected(true);
+        radioButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String value = ((RadioButton) event.getSource()).getText();
+                player.setForm(value);
+            }
+        });
         vBox.getChildren().add(radioButton);
         radioButton = new RadioButton();
         radioButton.setText("Square");
@@ -125,12 +133,18 @@ public class App extends Application {
         slider.setValue(4);
         slider.setMinorTickCount(1);
         slider.setAccessibleText("Octaves");
-
+        slider.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent event) {
+                double value = ((Slider) event.getSource()).getValue();
+                player.setOctave((int) value);
+            }
+        });
         bl.setRight(slider);
 
         Pane pane1 = new Pane();
 
-        canvas = new Canvas();
+        Canvas canvas = new Canvas();
 
         canvas.setWidth(640);
         canvas.setHeight(480);
@@ -213,15 +227,14 @@ public class App extends Application {
             }
         }
 
-
-        System.out.println(note);
-        int octave = (int) slider.getValue();
-        return soundProductionSystem.equiv(
-                note + octave + diese);
+        int octave = (int) player.getOctave();
+        String noteAnglaise = note + octave + diese;
+        System.out.println(noteAnglaise);
+        return soundProductionSystem.equiv(noteAnglaise);
 
     }
 
-    public SoundProductionSystem.Waveform getForm() {
+    public void setForm() {
         SoundProductionSystem.Waveform waveform = SoundProductionSystem.Waveform.SIN;
         RadioButton selectedRadioButton = (RadioButton) group.getSelectedToggle();
         String toogleGroupValue = selectedRadioButton.getText();
@@ -240,13 +253,11 @@ public class App extends Application {
                 break;
 
         }
-        return waveform;
+        player.setWaveform(waveform);
     }
 
     private void playNote(Object source) {
-
-        player.addNote(getTone(source), 1000.0f,
-                getForm());
+        player.addNote(getTone(source), 1000.0f);
 
     }
 

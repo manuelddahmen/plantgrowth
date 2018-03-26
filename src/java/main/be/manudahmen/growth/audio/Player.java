@@ -14,102 +14,6 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 package be.manudahmen.growth.audio;
 
 import javafx.application.Platform;
@@ -126,6 +30,9 @@ public class Player extends Thread {
     private SoundProductionSystem soundProductionSystem;
     private Player that;
     private AudioViewer audioViewer;
+    private int octave;
+    private String form;
+    private SoundProductionSystem.Waveform waveform = SoundProductionSystem.Waveform.SIN;
 
     public synchronized List<Note> notes()
 
@@ -160,7 +67,7 @@ public class Player extends Thread {
                     if (!note.isFinish()) {
                         double noteTimeMS = note.getTimer().getTimeElapsedMS();
 
-                        double position = note.getPositionNIncr() / 44100.0;
+                        double position = note.getPositionNIncr() / 44100.0 * 1000;
 
                         double angle = position * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
 
@@ -234,8 +141,9 @@ public class Player extends Thread {
         this.playing = playing;
     }
 
-    public synchronized void addNote(int tone, float minDurationMs, SoundProductionSystem.Waveform waveform) {
+    public synchronized void addNote(int tone, float minDurationMs) {
         Note note = new Note(minDurationMs, tone, waveform, new Enveloppe(minDurationMs));
+
         Timer timer = new Timer();
         note.setTimer(timer);
         timer.init();
@@ -248,7 +156,7 @@ public class Player extends Thread {
         });
     }
 
-    public synchronized void stopNote(int tone) {
+    public void stopNote(int tone) {
         getCurrentNotes().forEach(new Consumer<Note>() {
             @Override
             public void accept(Note note) {
@@ -269,5 +177,21 @@ public class Player extends Thread {
 
     public List<Note> getCurrentNotes() {
         return currentNotes;
+    }
+
+    public void setOctave(int octave) {
+        this.octave = octave;
+    }
+
+    public int getOctave() {
+        return octave;
+    }
+
+    public void setForm(String form) {
+        this.form = form;
+    }
+
+    public void setWaveform(SoundProductionSystem.Waveform waveform) {
+        this.waveform = waveform;
     }
 }

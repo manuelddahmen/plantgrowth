@@ -7,7 +7,7 @@ public class Note {
     private Timer timer;
     private double minDurationMs;
     private boolean finish;
-    private double positionNIncr;
+    private long positionNIncr;
 
     public Note(double minDurationMs, int tone, SoundProductionSystem.Waveform waveform, Enveloppe enveloppe) {
         this.minDurationMs = minDurationMs;
@@ -64,7 +64,7 @@ public class Note {
         return getTimer().getTimeElapsedMS() >= this.getMinDurationMs();
     }
 
-    public double getPositionNIncr() {
+    public long getPositionNIncr() {
         return positionNIncr++;
     }
 }
