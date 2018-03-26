@@ -178,13 +178,15 @@ public class App extends Application {
 
         primaryStage.setTitle("Plants 2.0 synth");
         primaryStage.setScene(scene1);
-        primaryStage.setFullScreen(true);
+        //primaryStage.setFullScreen(true);
+        //primaryStage.setMaximized(true);
         primaryStage.show();
 
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
                 player.setPlaying(false);
+                audioViewer.setRunning(false);
                 //System.exit(0);
             }
         });

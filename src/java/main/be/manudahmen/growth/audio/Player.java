@@ -115,6 +115,7 @@ package be.manudahmen.growth.audio;
 import javafx.application.Platform;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -133,7 +134,7 @@ public class Player extends Thread {
 
     public Player(AudioViewer audioViewer) {
         soundProductionSystem = new SoundProductionSystem();
-        currentNotes = new ArrayList<>();
+        currentNotes = Collections.synchronizedList(new ArrayList<>());
         timer = new Timer();
         timer.init();
         playing = true;
@@ -149,17 +150,20 @@ public class Player extends Thread {
         throw new UnsupportedOperationException("Note implemented yet");
     }
 
-    public void playCurrentNotes() {
-        double total = 0;
-        double facteurAmpl = 0;
-        short a = 0;
-        for (Note note : getCurrentNotes()) {
+    double total = 0;
+    double facteurAmpl = 0;
+    Short a = 0;
+
+    public synchronized void playCurrentNotes() {
+        getCurrentNotes().forEach(note -> {
             if (note.getTimer().getTimeEllapsedMS() < note.getDurationMs()) {
-                double index = note.getTimer().getTimeEllapsedMS() * 44100 / 1000.0;
+                double noteTimeMS = note.getTimer().getTimeEllapsedMS();
 
-                double angle = index * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
+                double position = noteTimeMS / 44100 / 1000.0;
 
-                facteurAmpl += note.getEnveloppe().getVolume(note.getTimer().getTimeEllapsedMS());
+                double angle = position * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
+
+                facteurAmpl = note.getEnveloppe().getVolume(noteTimeMS);
 
                 double ampl = 32767f * facteurAmpl;
 
@@ -180,6 +184,7 @@ public class Player extends Thread {
                 }
             }
         }
+        );
         total /= Math.sqrt(currentNotes.size() > 0 ? currentNotes.size() : 1);
 
         if (audioViewer != null) {
@@ -228,7 +233,7 @@ public class Player extends Thread {
         this.playing = playing;
     }
 
-    public void addNote(int tone, float durationMs, SoundProductionSystem.Waveform waveform) {
+    public synchronized void addNote(int tone, float durationMs, SoundProductionSystem.Waveform waveform) {
         Note note = new Note(durationMs, tone, waveform, new Enveloppe(1000f));
         Timer timer = new Timer();
         note.setTimer(timer);
@@ -242,7 +247,7 @@ public class Player extends Thread {
         });
     }
 
-    public void stopNote(int tone) {
+    public synchronized void stopNote(int tone) {
         getCurrentNotes().forEach(new Consumer<Note>() {
             @Override
             public void accept(Note note) {
@@ -259,7 +264,7 @@ public class Player extends Thread {
         });
     }
 
-    public synchronized List<Note> getCurrentNotes() {
+    public List<Note> getCurrentNotes() {
         return currentNotes;
     }
 }
