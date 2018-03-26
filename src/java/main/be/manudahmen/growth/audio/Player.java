@@ -115,7 +115,6 @@ package be.manudahmen.growth.audio;
 import javafx.application.Platform;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -131,6 +130,7 @@ public class Player extends Thread {
     {
         return currentNotes;
     }
+
     public Player() {
         soundProductionSystem = new SoundProductionSystem();
         currentNotes = new ArrayList<>();
@@ -140,9 +140,8 @@ public class Player extends Thread {
         that = this;
     }
 
-    public void addNote(double durationMs, Note note) {
+    public void addNote(Note note) {
         currentNotes.add(note);
-        note.setTimer(new Timer());
     }
 
     public float mixCurrentNotes() {
@@ -154,33 +153,31 @@ public class Player extends Thread {
         double facteurAmpl = 0;
         short a = 0;
         for (Note note : getCurrentNotes()) {
-            if (note.getTime() < note.getTimer().getTimeTotal()) {
 
-                double index = note.getTimer().getTimeEllapsedMS() * 44100 / 1000.0;
+            double index = note.getTimer().getTimeEllapsedMS() * 44100 / 1000.0;
 
-                double angle = note.getTimer().getTimeEllapsedMS() / (44100.0 / soundProductionSystem.calculateNoteFrequency(note.getTone())) * 2.0 * Math.PI;
+            double angle = index * note.getTimer().getTimeEllapsedMS() / (44100.0 / soundProductionSystem.calculateNoteFrequency(note.getTone())) * 2.0 * Math.PI;
 
-                facteurAmpl += note.getEnveloppe().getVolume(note.getDurationMs());
+            facteurAmpl += note.getEnveloppe().getVolume(note.getTimer().getTimeEllapsedMS());
 
-                double ampl = 32767f * facteurAmpl;
+            double ampl = 32767f * facteurAmpl;
 
-                switch (note.getWaveform()) {
-                    case SIN: // SIN
-                        total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                        break;
-                    case RECT: // RECT
-                        total += (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    case DECAY: // DECAY LINEAR
-                        total += ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                    case TRI: // DECAY LINEAR
-                        total += ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
-                    default: // SIN
-                        total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
-                        break;
-
-                }
+            switch (note.getWaveform()) {
+                case SIN: // SIN
+                    total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                    break;
+                case RECT: // RECT
+                    total += (Math.signum(Math.sin(angle)) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                case DECAY: // DECAY LINEAR
+                    total += ((1 - angle / 2 * Math.PI) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                case TRI: // DECAY LINEAR
+                    total += ((1 - Math.abs(angle / 2 * Math.PI) * ampl));  //32767 - max value for sample to take (-32767 to 32767)
+                default: // SIN
+                    total += (Math.sin(angle) * ampl);  //32767 - max value for sample to take (-32767 to 32767)
+                    break;
 
             }
+
         }
         total /= Math.sqrt(currentNotes.size() > 0 ? currentNotes.size() : 1);
 
@@ -236,6 +233,7 @@ public class Player extends Thread {
             }
         });
     }
+
     public void stopNote(int tone) {
         getCurrentNotes().forEach(new Consumer<Note>() {
             @Override

@@ -1,122 +1,27 @@
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/*
- * This file is part of Plants-Growth-2
- *     Plants-Growth-2 is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     Plants-Growth-2 is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 package be.manudahmen.growth.audio;
 
 public class Note {
-    private double durationMs;
     private int tone;
     private SoundProductionSystem.Waveform waveform;
     private Enveloppe enveloppe;
     private Timer timer;
-    private double time;
+    private double minDurationMs;
 
-    public Note(double durationMs, int tone, SoundProductionSystem.Waveform waveform, Enveloppe enveloppe) {
-        this.durationMs = durationMs;
+    public Note(double minDurationMs, int tone, SoundProductionSystem.Waveform waveform, Enveloppe enveloppe) {
+        this.minDurationMs = minDurationMs;
         this.tone = tone;
         this.waveform = waveform;
         this.enveloppe = enveloppe;
+        this.timer = new Timer();
+        timer.init();
     }
 
     public double getDurationMs() {
-        return durationMs;
+        return minDurationMs;
     }
 
-    public void setDurationMs(double durationMs) {
-        this.durationMs = durationMs;
+    public void setDurationMs(double minDurationMs) {
+        this.minDurationMs = minDurationMs;
     }
 
     public int getTone() {
@@ -144,7 +49,7 @@ public class Note {
     }
 
     public void setTimer(Timer timer) {
-        this.timer = new Timer();
+        this.timer = timer;
         timer.init();
     }
 
@@ -152,7 +57,4 @@ public class Note {
         return timer;
     }
 
-    public double getTime() {
-        return time;
-    }
 }
