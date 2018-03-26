@@ -19,7 +19,7 @@ package be.manudahmen.growth.audio;
 
 /**
  *
- * @author Manuel Dahmen <ibiiztera.it@gmail.com>
+ * @author Manuel Dahmen <manueldahmen.smoke@gmail.com>
  */
 public class Timer {
     private long timeElapsed = 0;

@@ -61,7 +61,7 @@ public class Enveloppe {
     }
 
     public double getVolume(double durationMs) {
-        if (!isRelease() && durationMs < 500.0) {
+        if (!isRelease() && durationMs < minDurationMs / 2) {
             return form.calculerPoint3D(durationMs).getY();
         } else if (!isRelease() && durationMs > minDurationMs) {
             time = durationMs;
