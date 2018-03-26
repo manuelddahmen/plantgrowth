@@ -67,11 +67,11 @@ public class Player extends Thread {
                     if (!note.isFinish()) {
                         double noteTimeMS = note.getTimer().getTimeElapsedMS();
 
-                        double position = note.getPositionNIncr() / 44100.0 * 1000;
+                        double positionRatioPerSecond = note.getPositionNIncr() / 44100.0;
 
-                        double angle = position * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
+                        double angle = positionRatioPerSecond * soundProductionSystem.calculateNoteFrequency(note.getTone()) * 2.0 * Math.PI;
 
-                        facteurAmpl = note.getEnveloppe().getVolume(noteTimeMS);
+                        facteurAmpl = note.getEnveloppe().getVolume(noteTimeMS / 1000.0);
 
                         double ampl = 32767f * facteurAmpl;
 

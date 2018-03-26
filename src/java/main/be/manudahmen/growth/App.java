@@ -227,7 +227,7 @@ public class App extends Application {
             }
         }
 
-        int octave = (int) player.getOctave();
+        int octave = player.getOctave();
         String noteAnglaise = note + octave + diese;
         System.out.println(noteAnglaise);
         return soundProductionSystem.equiv(noteAnglaise);
