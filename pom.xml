@@ -177,14 +177,14 @@
 
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>be.manudahmen</groupId>
-    <artifactId>plant-growth</artifactId>
-    <version>1</version>
+    <groupId>one.empty3</groupId>
+    <artifactId>plantgrowth</artifactId>
+    <version>1.0</version>
     <distributionManagement>
         <repository>
-            <id>ftp-repository</id>
+            <id>if2</id>
 
-            <url>ftp://ftp.manudahmen.be/m2repository</url>
+            <url>ftp://ftp.empty3.one</url>
         </repository>
     </distributionManagement>
     <properties>
@@ -197,10 +197,6 @@
     </profiles>
 
     <repositories>
-        <repository>
-            <id>Local repository</id>
-            <url>file:///c:/users/line/.m2</url>
-        </repository>
         <repository>
             <id>OpenIMAJ maven repository</id>
             <url>http://maven.openimaj.org/</url>
@@ -241,15 +237,9 @@
             <version>5.4</version>
         </dependency>
         <dependency>
-            <groupId>ch.randelshofer</groupId>
-            <artifactId>montemedia</artifactId>
-            <version>0.7.7</version>
-        </dependency>
-        <dependency>
             <groupId>be.manudahmen</groupId>
-            <artifactId>jcalculator</artifactId>
-            <version>1.5</version>
-        </dependency>
+            <artifactId>empty3</artifactId>
+            <version>2020.2</version>
         <!--<dependency>
             <groupId>com.jsyn</groupId>
             <artifactId>jsyn</artifactId>
@@ -268,7 +258,7 @@
     </pluginRepositories>
     <name>Plants' growth</name>
     <description>L-System for simulation of plants' growth</description>
-    <url>http::/gitlab.com/LaboManu</url>
+    <url>http::/github.com/manuelddahmen/plantgrowth</url>
     <build>
 
         <defaultGoal>install</defaultGoal>
