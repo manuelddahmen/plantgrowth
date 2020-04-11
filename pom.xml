@@ -62,24 +62,16 @@
             <version>RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>be.manudahmen</groupId>
+            <groupId>one.empty3</groupId>
             <artifactId>empty3</artifactId>
-            <version>64</version>
+            <version>2020.2</version>
         </dependency>
         <dependency>
             <groupId>javax.vecmath</groupId>
             <artifactId>vecmath</artifactId>
             <version>1.5.2</version>
         </dependency>
-        <dependency>
-            <groupId>xuggle</groupId>
-            <artifactId>xuggle-xuggler</artifactId>
-            <version>5.4</version>
-        </dependency>
-        <dependency>
-            <groupId>be.manudahmen</groupId>
-            <artifactId>empty3</artifactId>
-        </dependency>
+        
     </dependencies>
     <pluginRepositories>
         <pluginRepository>
