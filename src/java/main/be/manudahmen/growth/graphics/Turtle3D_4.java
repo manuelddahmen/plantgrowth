@@ -65,7 +65,7 @@
  */
 package be.manudahmen.growth.graphics;
 
-import be.manudahmen.empty3.*;
+import one.empty3.library.*;
 
 import java.awt.*;
 import java.util.ArrayList;
