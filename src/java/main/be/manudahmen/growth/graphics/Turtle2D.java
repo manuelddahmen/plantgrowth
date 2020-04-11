@@ -112,9 +112,7 @@
 
 package be.manudahmen.growth.graphics;
 
-import be.manudahmen.empty3.Matrix33;
-import be.manudahmen.empty3.Point2D;
-import be.manudahmen.empty3.Point3D;
+import one.empty3.library.*;
 
 import java.awt.*;
 
