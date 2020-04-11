@@ -70,7 +70,7 @@ public class Turtle3D_3 {
 
     public void line(double dist) {
         Point3D newPosition = getPosition().plus(vU.mult(dist));
-        SegmentDroite seg = new SegmentDroite(getPosition(), newPosition);
+        LineSegment seg = new LineSegment(getPosition(), newPosition);
         seg.texture(new ColorTexture(this.color));
         scene().add(seg);
         setPosition(newPosition);
