@@ -144,8 +144,9 @@
 
 package be.manudahmen.growth;
 
-import be.manudahmen.jcalculator.*;
-
+import one.empty3.library.*;
+import one.empty3.library.core.*;
+import one.empty3.library.core.raytracer.tree.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -197,9 +198,9 @@ public class FunctionalParameter extends Parameter {
 
                 }
             });
-            AlgebraicTree tree = null;
+            AlgebricTree tree = null;
             try {
-                tree = new AlgebraicTree(getFormula(), parametersValues);
+                tree = new AlgebricTree(getFormula(), parametersValues);
 
             } catch (AlgebraicFormulaSyntaxException e) {
                 e.printStackTrace();
