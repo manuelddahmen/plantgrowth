@@ -45,7 +45,7 @@
  *     You should have received a copy of the GNU General Public License
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+/*
 import be.manudahmen.growth.audio.SoundProductionSystem;
 import javafx.scene.control.Button;
 
@@ -70,3 +70,4 @@ public class AppSound {
         }
     }
 }
+*/
