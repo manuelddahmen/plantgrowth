@@ -27,9 +27,6 @@
             <url>ftp://ftp.empty3.one</url>
         </repository>
     </distributionManagement>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
     <profiles>
         <profile>
             <id>env-devel</id>
