@@ -29,7 +29,7 @@
     </distributionManagement>
     <profiles>
         <profile>
-            <id>env-devel</id>
+            <id>empty3</id>
         </profile>
     </profiles>
 
@@ -186,11 +186,6 @@
                 <configuration>
                     <mainClass>be.manudahmen.growth.App</mainClass>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.zenjava</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>8.9.0-SNAPSHOT</version>
             </plugin>
         </plugins>
 
