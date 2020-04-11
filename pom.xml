@@ -79,13 +79,7 @@
         <dependency>
             <groupId>be.manudahmen</groupId>
             <artifactId>empty3</artifactId>
-            <version>2020.2</version>
-        <!--<dependency>
-            <groupId>com.jsyn</groupId>
-            <artifactId>jsyn</artifactId>
-            <version>20170815</version>
-        </dependency>-->
-
+        </dependency>
     </dependencies>
     <pluginRepositories>
         <pluginRepository>
