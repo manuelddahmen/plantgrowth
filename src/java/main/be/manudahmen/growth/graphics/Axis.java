@@ -30,9 +30,9 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package be.manudahmen.growth.graphics;
+package one.empty3.growth.graphics;
 
-import be.manudahmen.empty3.Point3D;
+import one.empty3.library.Point3D;
 
 import java.util.Vector;
 
