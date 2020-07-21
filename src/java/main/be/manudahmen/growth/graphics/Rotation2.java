@@ -48,8 +48,8 @@
 
 package be.manudahmen.growth.graphics;
 
-import be.manudahmen.empty3.Matrix33;
-import be.manudahmen.empty3.Point3D;
+import one.empty3.library.Matrix33;
+import one.empty3.library.Point3D;
 
 /***
  *  Rotation d'un angle quelconque autour d'un axe
