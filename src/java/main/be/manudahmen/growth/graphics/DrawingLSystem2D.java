@@ -158,9 +158,9 @@
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package be.manudahmen.growth.graphics;
+package one.empty3.growth.graphics;
 
-import be.manudahmen.growth.*;
+import one.empty3.growth.*;
 
 import java.awt.*;
 import java.util.HashMap;
