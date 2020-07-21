@@ -110,7 +110,7 @@
  *     along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package be.manudahmen.growth.graphics;
+package one.empty3.graphics;
 
 import one.empty3.library.*;
 
