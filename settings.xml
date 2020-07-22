@@ -2,14 +2,62 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       https://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <profiles>
-<profile>
-<id>empty3</id>
-  <repositories>
-    <repository>
-      <id>myrepo</id>
-      <url>https://empty3.one/downloads/maven</url>
+  
+  <servers>
+    <server>
+      <id>if2</id>
+      <username>empty3.one</username>
+      <password>i[]opmanu1</password>
+    </server>
+<server>
+      <id>ossrh</id>
+      <username>empty3.one</username><password>avzCazsar0001&amp;</password>
+    </server>
+
+  </servers>
+<profiles>
+  
+  <profile>
+      <id>ossrh</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <gpg.executable>gpg</gpg.executable>
+        <gpg.passphrase>avzCazsar0001</gpg.passphrase>
+      </properties>
+
+
+
       
+
+
+
+
+      <repositories>
+        <repository>
+          <id>netbeans-r</id>
+
+          <url>http://bits.netbeans.org/maven2</url>
+        </repository>
+<repository>
+<id>spring-io</id>
+<url>https://repo.spring.io/plugins-release/</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>ossrh</activeProfile>
+  </activeProfiles>
+
+
+<!--
+<profiles>
+    <profile>
+      <id>empty3</id>
+      <repositories>
         <repository>
           <id>mvn-r</id>
           <name>mvn r</name>
@@ -35,5 +83,5 @@
 
   <activeProfiles>
     <activeProfile>empty3</activeProfile>
-  </activeProfiles>
+  </activeProfiles>-->
 </settings>

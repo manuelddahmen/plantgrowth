@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="0" name="be.manudahmen.growth.TestRotation2_methodeBis" time="2.75" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="one.empty3.growth.TestRotation2_methodeBis" time="2.75" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,18 +61,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotationNonO" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation90" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation30degRandomAxe" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation0degRandomAxe" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotationMethode2" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation0degRandomPoint" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation360deg300RandomAxe" time="2.672"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation360degRandomAxe" time="0.015"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation180" time="0.016"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotationIdent1" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotationIdent2" time="0.016"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotationIdent3" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testRotation30deg" time="0.015"/>
-  <testcase classname="be.manudahmen.growth.TestRotation2_methodeBis" name="testEmptyDirectory" time="0.016"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotationNonO" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation90" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation30degRandomAxe" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation0degRandomAxe" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotationMethode2" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation0degRandomPoint" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation360deg300RandomAxe" time="2.672"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation360degRandomAxe" time="0.015"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation180" time="0.016"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotationIdent1" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotationIdent2" time="0.016"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotationIdent3" time="0"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testRotation30deg" time="0.015"/>
+  <testcase classname="one.empty3.growth.TestRotation2_methodeBis" name="testEmptyDirectory" time="0.016"/>
 </testsuite>

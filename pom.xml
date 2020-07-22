@@ -101,10 +101,10 @@
                 </excludes>
             </resource>
         </resources>
-        <sourceDirectory>${basedir}/src/java/main</sourceDirectory>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
         <scriptSourceDirectory>${basedir}/src</scriptSourceDirectory>
-        <testSourceDirectory>${basedir}/src/java/test</testSourceDirectory>
+        <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <outputDirectory>${basedir}/target/classes</outputDirectory>
         <testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
 
@@ -117,8 +117,8 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>be.manudahmen.growth.App</mainClass>
-                            <packageName>be.manudahmen.growth</packageName>
+                            <mainClass>one.empty3.growth.App</mainClass>
+                            <packageName>one.empty3.growth</packageName>
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
@@ -217,7 +217,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>8.8.3</version>
                 <configuration>
-                    <mainClass>be.manudahmen.growth.App</mainClass>
+                    <mainClass>one.empty3.growth.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>

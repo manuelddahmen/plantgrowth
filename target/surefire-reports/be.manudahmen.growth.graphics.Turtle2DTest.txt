@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: be.manudahmen.growth.graphics.Turtle2DTest
+Test set: one.empty3.growth.graphics.Turtle2DTest
 -------------------------------------------------------------------------------
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec

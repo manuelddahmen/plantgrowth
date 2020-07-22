@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="be.manudahmen.growth.TestMethodEqualsSymbol" time="0" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="one.empty3.growth.TestMethodEqualsSymbol" time="0" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,8 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="be.manudahmen.growth.TestMethodEqualsSymbol" name="testEmpty" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestMethodEqualsSymbol" name="test1symbolDiff" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestMethodEqualsSymbol" name="testEmpty2" time="0"/>
-  <testcase classname="be.manudahmen.growth.TestMethodEqualsSymbol" name="test1symbolId" time="0"/>
+  <testcase classname="one.empty3.growth.TestMethodEqualsSymbol" name="testEmpty" time="0"/>
+  <testcase classname="one.empty3.growth.TestMethodEqualsSymbol" name="test1symbolDiff" time="0"/>
+  <testcase classname="one.empty3.growth.TestMethodEqualsSymbol" name="testEmpty2" time="0"/>
+  <testcase classname="one.empty3.growth.TestMethodEqualsSymbol" name="test1symbolId" time="0"/>
 </testsuite>

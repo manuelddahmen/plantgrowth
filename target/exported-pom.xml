@@ -2,7 +2,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>be.manudahmen</groupId>
+  <groupId>one.empty3</groupId>
   <artifactId>plant-growth</artifactId>
   <version>1</version>
   <name>Plants' growth</name>
@@ -32,7 +32,7 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>be.manudahmen</groupId>
+      <groupId>one.empty3</groupId>
       <artifactId>empty3</artifactId>
       <version>64</version>
       <scope>compile</scope>
@@ -56,7 +56,7 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>be.manudahmen</groupId>
+      <groupId>one.empty3</groupId>
       <artifactId>jcalculator</artifactId>
       <version>1.5</version>
       <scope>compile</scope>
@@ -209,8 +209,8 @@
             <configuration>
               <archive>
                 <manifest>
-                  <mainClass>be.manudahmen.growth.App</mainClass>
-                  <packageName>be.manudahmen.growth</packageName>
+                  <mainClass>one.empty3.growth.App</mainClass>
+                  <packageName>one.empty3.growth</packageName>
                   <addClasspath>true</addClasspath>
                 </manifest>
                 <manifestEntries>
@@ -224,8 +224,8 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>be.manudahmen.growth.App</mainClass>
-              <packageName>be.manudahmen.growth</packageName>
+              <mainClass>one.empty3.growth.App</mainClass>
+              <packageName>one.empty3.growth</packageName>
               <addClasspath>true</addClasspath>
             </manifest>
             <manifestEntries>
@@ -337,7 +337,7 @@
         <artifactId>javafx-maven-plugin</artifactId>
         <version>8.9.0-SNAPSHOT</version>
         <configuration>
-          <mainClass>be.manudahmen.growth.App</mainClass>
+          <mainClass>one.empty3.growth.App</mainClass>
         </configuration>
       </plugin>
       <plugin>
