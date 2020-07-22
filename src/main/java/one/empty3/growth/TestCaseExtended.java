@@ -164,8 +164,8 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Properties;
 
-import one.empty3.empty3.Point3D;
-import one.empty3.empty3.ZBuffer;
+import one.empty3.library.Point3D;
+import one.empty3.library.ZBuffer;
 import junit.framework.TestCase;
 import org.junit.BeforeClass;
 import org.junit.Test;
