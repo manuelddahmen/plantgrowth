@@ -144,7 +144,7 @@ public class Turtle2D {
 
     public Turtle2D(Image image) {
         zeImage = image;
-        position = new Point3D(image.getWidth(null) / 2, image.getHeight(null) / 2, 0);
+        position = new Point3D(image.getWidth(null) / 2., image.getHeight(null) / 2., 0.);
     }
 
     public Rectangle getDimImage() {
