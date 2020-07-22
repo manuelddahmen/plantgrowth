@@ -192,7 +192,7 @@ public class Turtle2D {
         Point3D extremite = position.plus(moveTo(length));
         Graphics graphics = getZeImage().getGraphics();
         graphics.setColor(zeColor);
-        graphics.drawLine((int) position.getX(),
+        graphics.drawLine((int)(float) position.getX(),
                 (int)(float) position.getY(),
                 (int)(float) extremite.getX(),
                 (int)(float) extremite.getY());
