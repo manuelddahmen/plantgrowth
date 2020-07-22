@@ -29,7 +29,7 @@
  *     You should have received a copy of the GNU General Public License
  *     along with Plants-Growth-2.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+/*
 package one.empty3.growth;
 
 import java.util.ResourceBundle;
@@ -49,4 +49,4 @@ public class AppSound {
     }
 
 }
-
+*/
