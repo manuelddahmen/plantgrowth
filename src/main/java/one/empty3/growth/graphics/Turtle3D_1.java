@@ -207,7 +207,7 @@ public class Turtle3D_1 {
 
     public void line(double distance) {
         Point3D newPosition = position.plus(matriceRepereULH().mult(Point3D.X.mult(distance)));
-        SegmentDroite droite = new SegmentDroite(position, newPosition);
+        LineSegment droite = new LineSegment(position, newPosition);
         droite.texture(new ColorTexture(color));
         zBuffer.scene().add(droite);
         position = newPosition;
