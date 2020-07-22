@@ -201,16 +201,16 @@ public class FunctionalParameter extends Parameter {
             AlgebricTree tree = null;
             try {
                 tree = new AlgebricTree(getFormula(), parametersValues);
-
+                tree.construct();
             } catch (AlgebraicFormulaSyntaxException e) {
                 e.printStackTrace();
-            }
+}
             try {
                 Double d = (Double) (tree.eval());
                 setValue(d);
                 System.out.println(d);
                 return d;
-            } catch (TreeNodeEvalException e) {
+            } catch (TreeNodeEvalException | AlgebraicFormulaSyntaxException e) {
                 e.printStackTrace();
             }
 
