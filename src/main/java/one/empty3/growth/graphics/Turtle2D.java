@@ -124,17 +124,17 @@ public class Turtle2D {
                 {
                         Math.cos(angle),
                         Math.sin(angle),
-                        0,
+                        0.,
                         Math.sin(angle),
                         Math.cos(angle),
-                        0,
-                        0, 0, 0
+                        0d,
+                        0d, 0d, 0d
                 }
         );
     }
 
     private Point3D moveTo(double length) {
-        return new Point3D(Math.cos(rads), Math.sin(rads), 0).mult(length);
+        return new Point3D(Math.cos(rads), Math.sin(rads), 0.).mult(length);
     }
 
     private Rectangle dimImage;
