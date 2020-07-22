@@ -224,7 +224,7 @@
 
 package one.empty3.growth;
 
-import one.empty3.jcalculator.*;
+import one.empty3.library.core.raytracer.tree.*;
 import one.empty3.growth.graphics.Turtle2D;
 
 import java.util.*;
