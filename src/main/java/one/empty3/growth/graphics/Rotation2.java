@@ -158,11 +158,11 @@ public class Rotation2 {
 
         Matrix33 rotationPlanPperdAB = new Matrix33(new double[]
                 {
-                        Math.cos(angle), Math.sin(angle), 0,
-                        -Math.sin(angle), Math.cos(angle), 0,
-                        0, 0, 1
+                        Math.cos(angle), Math.sin(angle), 0d,
+                        -Math.sin(angle), Math.cos(angle), 0d,
+                        0d, 0d, 1d
                 });
-        Point3D pU2U3 = rotationPlanPperdAB.mult(new Point3D(distance, 0, 0));
+        Point3D pU2U3 = rotationPlanPperdAB.mult(new Point3D(distance, 0., 0d));
 
         Point3D res = u2.mult(pU2U3.getX()).plus(u3.mult(pU2U3.getY()));
 
