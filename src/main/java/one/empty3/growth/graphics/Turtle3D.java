@@ -116,7 +116,7 @@ public class Turtle3D {
 
     public void move(double to) {
         Point3D extrémité = positionTete.plus(vecteurDirecteur.mult(to));
-        zBuffer.scene().add(new SegmentDroite(positionTete, extrémité, new ColorTexture(color)));
+        zBuffer.scene().add(new SegmentDroite(positionTete, extrémité));
         positionTete = extrémité;
     }
 
