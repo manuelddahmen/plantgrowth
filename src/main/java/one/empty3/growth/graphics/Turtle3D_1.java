@@ -112,7 +112,7 @@
 
 package one.empty3.growth.graphics;
 
-import one.empty3.empty3.*;
+import one.empty3.library.*;
 import one.empty3.library.core.*;
 import java.awt.*;
 
