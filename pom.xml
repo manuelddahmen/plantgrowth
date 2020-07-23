@@ -21,17 +21,41 @@
     <artifactId>plantgrowth</artifactId>
     <version>1.0</version>
     <distributionManagement>
-        <repository>
-            <id>if2</id>
+  <snapshotRepository>
+    <id>ossrh</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+  </snapshotRepository>
+  <repository>
+    <id>ossrh</id>
+    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+  </repository>
+<!--
 
-            <url>https://empty3.one</url>
-        </repository>
-    </distributionManagement>
-    <profiles>
-        <profile>
-            <id>empty3</id>
-        </profile>
-    </profiles>
+<repository>
+            <id>if2</id>
+            <name>empty3.one</name>
+            <url>ftp://ftp.empty3.one/downloads/.m2</url>
+</repository>
+-->
+
+</distributionManagement>
+
+	<licenses>
+		<license>
+			<name>Gnu Gpl 3</name>
+			<url>http://www.fsf.org/licenses/gpl</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/manuelddahmen/plantgrowth</url>
+		<connection>scm:git:git://github.com/manuelddahmen/plantgrowth.git</connection>
+		<developerConnection>
+scm:git:git://github.com/manuelddahmen/plantgrowth.git
+</developerConnection>
+	</scm>
+    
 
     <repositories>
         <repository>
