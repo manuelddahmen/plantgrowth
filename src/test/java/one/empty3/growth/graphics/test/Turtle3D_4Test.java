@@ -86,9 +86,10 @@ public class Turtle3D_4Test extends TestCaseExtended {
         ZBuffer z = ZBufferFactory.instance(1600, 1200);
 
         z.backgroundTexture(new ColorTexture(new Color(90, 160, 50)));
-        z.scene().cameraActive(new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
-        z.suivante();
         z.scene(new Scene());
+        z.scene().cameraActive(new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
+        //z.suivante();
+        
       //  z.scene().cameraActive(z.camera());
         Turtle3D_4 turtle3D_4;
         turtle3D_4 = new Turtle3D_4(z);
