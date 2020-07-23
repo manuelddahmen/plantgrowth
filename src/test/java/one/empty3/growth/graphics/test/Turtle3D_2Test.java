@@ -72,8 +72,8 @@ public class Turtle3D_2Test extends TestCaseExtended {
         ZBuffer z = ZBufferFactory.instance(1600, 1200);
         z.backgroundTexture(new ColorTexture(new Color(90, 160, 50)));
         Turtle3D turtle3D;
-        Camera camera = (new Camera(new Point3D(0, 0, -200), new Point3D(0, 0, 0)));
-        z.camera(camera);
+        Camera camera = new Camera(new Point3D(0, 0, -200), new Point3D(0, 0, 0));
+        z.scene().cameraActive(camera);
         turtle3D = new Turtle3D(z);
 
         turtle3D.line(100);
@@ -97,7 +97,7 @@ public class Turtle3D_2Test extends TestCaseExtended {
         ZBuffer z = ZBufferFactory.instance(1600, 1200);
         ColorTexture colorTexture = new ColorTexture(new Color(140, 50, 100));
         z.backgroundTexture(colorTexture);
-        z.camera(new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
+        z.scene().cameraActive(new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
         Turtle3D turtle3D = new Turtle3D(z);
 
         turtle3D.setzBuffer(z);
