@@ -209,5 +209,10 @@ scm:git:git://github.com/manuelddahmen/plantgrowth.git
         </extensions>
 
     </build>
-
+<dependencies><dependency>
+ <groupId>one.empty3</groupId>
+    <artifactId>empty3-library-3d</artifactId>
+    <version>2020.3.7</version>
+ </dependency>
+</dependencies>
 </project>
