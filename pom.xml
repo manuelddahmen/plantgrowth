@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>one.empty3</groupId>
     <artifactId>plantgrowth</artifactId>
-    <version>2020.3</version>
+    <version>2020.3.7</version>
     <distributionManagement>
   <snapshotRepository>
     <id>ossrh</id>
