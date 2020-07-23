@@ -243,7 +243,7 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
             y = rotate(a, b,
                     angle, y);
 
-            Point3D plus = y.plus(new Point3D(image.getWidth() / 2, image.getHeight() / 2, 0));
+            Point3D plus = y.plus(new Point3D(image.getWidth() / 2., image.getHeight() / 2, 0.));
             graphics.drawLine((int)(double) plus.getX(), (int)(double) plus.getY(), (int) (double)plus.getX(), (int)(double) plus.getY());
 
             Point3D y2 = y;
