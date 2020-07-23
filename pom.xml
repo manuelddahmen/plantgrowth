@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>one.empty3</groupId>
     <artifactId>plantgrowth</artifactId>
-    <version>1.0</version>
+    <version>2020.3</version>
     <distributionManagement>
   <snapshotRepository>
     <id>ossrh</id>
@@ -57,55 +57,8 @@ scm:git:git://github.com/manuelddahmen/plantgrowth.git
 	</scm>
     
 
-    <repositories>
-        <repository>
-            <id>OpenIMAJ maven repository</id>
-            <url>http://maven.openimaj.org/</url>
-        </repository>
-        <repository>
-            <id>OpenIMAJ Snapshots maven repository</id>
-            <url>http://octopussy.ecs.soton.ac.uk/m2/snapshots/</url>
-        </repository>
-        <repository>
-            <id>xuggle repo</id>
-            <url>http://xuggle.googlecode.com/svn/trunk/repo/share/java/</url>
-        </repository>
-        <repository>
-            <id>clojars</id>
-            <name>clojars</name>
-            <url>https://clojars.org/repo/</url>
-        </repository>
-    </repositories>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.9</version>
-        </dependency>
-        <dependency>
-            <groupId>one.empty3</groupId>
-            <artifactId>empty3-library-3d</artifactId>
-            <version>2020.3.7</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.vecmath</groupId>
-            <artifactId>vecmath</artifactId>
-            <version>1.5.2</version>
-        </dependency>
-        
-    </dependencies>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>oss-sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-    <name>Plants' growth</name>
-    <description>L-System for simulation of plants' growth</description>
-    <url>http::/github.com/manuelddahmen/plantgrowth</url>
+    
+    
     <build>
 
         <defaultGoal>install</defaultGoal>
@@ -256,14 +209,5 @@ scm:git:git://github.com/manuelddahmen/plantgrowth.git
         </extensions>
 
     </build>
-
-
-    <licenses>
-        <license>
-            <name>General Public Licence, v3 or higher</name>
-            <url>http://www.gnu.org/licence</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
 
 </project>
