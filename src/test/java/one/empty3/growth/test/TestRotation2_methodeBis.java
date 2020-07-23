@@ -220,11 +220,11 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
     }
 
     public void testRotation360degRandomAxe() {
-        Point3D a = Point3D.random(10);
-        Point3D b = Point3D.random(10);
+        Point3D a = Point3D.random(10.);
+        Point3D b = Point3D.random(10.);
 
         Point3D y = rotate(a, b,
-                2 * Math.PI, Point3D.X);
+                2. * Math.PI, Point3D.X);
 
         assertEqualsPoint3D(Point3D.X, y, 0.1);
 
@@ -235,7 +235,7 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
         Graphics graphics = image.getGraphics();
         graphics.setColor(Color.YELLOW);
         Point3D y = Point3D.O0;
-        for (double angle = 0; angle < 2 * Math.PI; angle += 2 * Math.PI / 1000) {
+        for (double angle = 0.; angle < 2. * Math.PI; angle += 2. * Math.PI / 1000.) {
             Point3D a = Point3D.random(50.);
             Point3D b = Point3D.random(50.);
 
@@ -254,8 +254,8 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
                 double angleB = 2 * Math.PI / 1000;
                 y2 = rotate(c, d,
                         angleB, y2);
-                plus = y2.plus(new Point3D(image.getWidth() / 2, image.getHeight() / 2, 0));
-                graphics.drawLine((int) (double)plus.getX(), (int)(double) plus.getY(), (int) (double)plus.getX(), (int) plus.getY());
+                plus = y2.plus(new Point3D(image.getWidth() / 2., image.getHeight() / 2., 0.));
+                graphics.drawLine((int) (double)plus.getX(), (int)(double) plus.getY(), (int) (double)plus.getX(), (int)(double)plus.getY());
 
             }
         }
@@ -266,8 +266,8 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
     public void testRotationMethode2() {
         Rotation2 rotation2 = new Rotation2();
 
-        Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6, 5, 6));
-        assertEqualsPoint3D(intersection, new Point3D(1, 5, 0), 0.001);
+        Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6., 5., 6.));
+        assertEqualsPoint3D(intersection, new Point3D(1., 5., 0.), 0.001);
 
     }
 
