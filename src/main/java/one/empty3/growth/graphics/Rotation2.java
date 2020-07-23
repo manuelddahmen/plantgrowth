@@ -51,7 +51,7 @@ package one.empty3.growth.graphics;
 import one.empty3.library.Matrix33;
 import one.empty3.library.Point3D;
 
-/***
+/*
  *  Rotation d'un angle quelconque autour d'un axe
  Bonjour,
 
@@ -139,7 +139,7 @@ public class Rotation2 {
     }
 
 
-    /***
+    /*
      *
      * @param X Point à faire tourner
      * @param A Point de la droite d (premier)
