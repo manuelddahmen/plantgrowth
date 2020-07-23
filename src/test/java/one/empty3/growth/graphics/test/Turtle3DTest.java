@@ -649,7 +649,7 @@ public class Turtle3DTest extends TestCaseExtended {
                     y2 = rotate(c, d,
                             angleB, y2);
                     plus = y2.plus(new Point3D(image.getWidth() / 2., image.getHeight() / 2., 0.));
-                    graphics.drawLine((int) plus.getX(), (int) plus.getY(), (int) plus.getX(), (int) plus.getY());
+                    graphics.drawLine((int) (double) plus.getX(), (int)(double) plus.getY(), (int)(double) plus.getX(), (int) (double)plus.getY());
 
                 }
             }
