@@ -215,7 +215,7 @@ scm:git:git://github.com/manuelddahmen/plantgrowth.git
     <version>2020.3.7</version>
  </dependency>
 <dependency>
-         <groupId>org.junit</groupId>
+         <groupId>junit</groupId>
          <artifactId>junit</artifactId>
          <version>4.5</version>
       </dependency>
