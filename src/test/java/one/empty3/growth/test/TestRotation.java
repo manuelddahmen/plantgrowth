@@ -232,7 +232,7 @@ public class TestRotation extends TestCase {
     public void testRotation180() {
         Point3D x = rotate(new Point3D(11., 0., 0.), new Point3D(10., 0., 0.),
                 Math.PI, new Point3D(3., 5., 0.));
-        Point3D y = new Point3D(3, -5, 0);
+        Point3D y = new Point3D(3, -5, 0.);
 
         assertEqualsPoint3D(x, y, 0.1);
 
