@@ -182,7 +182,7 @@ public class Turtle3DTest extends TestCaseExtended {
         ZBuffer z = ZBufferFactory.instance(1600, 1200);
         ColorTexture colorTexture = new ColorTexture(new Color(140, 50, 100));
         z.backgroundTexture(colorTexture);
-        z.camera(new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
+        z.scene().cameraActive(new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
         Turtle3D_3 turtle3D = new Turtle3D_3();
 
         turtle3D.setzBuffer(z);
@@ -441,7 +441,7 @@ public class Turtle3DTest extends TestCaseExtended {
         public void testRotationMethode2() {
             Rotation2 rotation2 = new Rotation2();
 
-            Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6, 5, 6));
+            Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6., 5., 6.));
             assertEqualsPoint3D(intersection, new Point3D(1., 5., 0.), 0.001);
 
         }
@@ -474,7 +474,7 @@ public class Turtle3DTest extends TestCaseExtended {
                     one.empty3.growth.graphics.Rotation rotation = new Rotation(random, Point3D.Y, 2 * Math.PI * i / MAX);
                     Point3D p = rotation.rotate(random2);
                     p.texture(new ColorTexture(color1));
-                    SegmentDroite segmentDroite = new SegmentDroite(p0, p);
+                    LineSegment segmentDroite = new LineSegment(p0, p);
                     segmentDroite.texture(new ColorTexture(color1));
                     TRISphere triSphere = new TRISphere(p, 1.0);
                     triSphere.texture(new ColorTexture(color1));
