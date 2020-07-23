@@ -174,7 +174,7 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
         Point3D y = x;
 
         for (int i = 0; i < 12 * 2; i++) {
-            x = rotate(Point3D.X, new Point3D(10, 0, 0),
+            x = rotate(Point3D.X, new Point3D(10., 0., 0.),
                     Math.PI / 6, x);
         }
 
@@ -184,9 +184,9 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
     }
 
     public void testRotation30degRandomAxe() {
-        Point3D A = Point3D.random(100);
-        Point3D B = Point3D.random(100);
-        Point3D X = Point3D.random(100);
+        Point3D A = Point3D.random(100.);
+        Point3D B = Point3D.random(100.);
+        Point3D X = Point3D.random(100.);
         Point3D Y = X;
 
         for (int i = 0; i < 12; i++) {
@@ -199,21 +199,21 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
     }
 
     public void testRotation0degRandomPoint() {
-        Point3D x = Point3D.random(10);
+        Point3D x = Point3D.random(10.);
 
-        Point3D y = rotate(Point3D.X, new Point3D(10, 0, 0),
-                0, x);
+        Point3D y = rotate(Point3D.X, new Point3D(10., 0., 0.),
+                0., x);
 
         assertEqualsPoint3D(x, y, 0.1);
 
     }
 
     public void testRotation0degRandomAxe() {
-        Point3D a = Point3D.random(10);
-        Point3D b = Point3D.random(10);
+        Point3D a = Point3D.random(10.);
+        Point3D b = Point3D.random(10.);
 
         Point3D y = rotate(a, b,
-                0, Point3D.X);
+                0., Point3D.X);
 
         assertEqualsPoint3D(Point3D.X, y, 0.1);
 
@@ -236,8 +236,8 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
         graphics.setColor(Color.YELLOW);
         Point3D y = Point3D.O0;
         for (double angle = 0; angle < 2 * Math.PI; angle += 2 * Math.PI / 1000) {
-            Point3D a = Point3D.random(50);
-            Point3D b = Point3D.random(50);
+            Point3D a = Point3D.random(50.);
+            Point3D b = Point3D.random(50.);
 
 
             y = rotate(a, b,
@@ -249,8 +249,8 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
             Point3D y2 = y;
 
             for (int i = 0; i < 1000; i++) {
-                Point3D c = Point3D.random(50);
-                Point3D d = Point3D.random(50);
+                Point3D c = Point3D.random(50.);
+                Point3D d = Point3D.random(50.);
                 double angleB = 2 * Math.PI / 1000;
                 y2 = rotate(c, d,
                         angleB, y2);
