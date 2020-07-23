@@ -19,6 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>one.empty3</groupId>
     <artifactId>plantgrowth</artifactId>
+    <name>plantgrowth</name>
     <version>2020.3.7</version>
 <description>3D rendering engine. Plus modelling. expected glsl textures 3d and 2d rendering</description>
     <packaging>jar</packaging>
