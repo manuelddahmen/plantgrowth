@@ -157,7 +157,7 @@ public class Turtle3DTest extends TestCaseExtended {
         ZBuffer z = ZBufferFactory.instance(1600, 1200);
         z.backgroundTexture(new ColorTexture(new Color(90, 160, 50)));
         Turtle3D_1 turtle3D;
-        Camera camera = (new Camera(new Point3D(0, 0, -200), new Point3D(0, 0, 0)));
+        Camera camera = (new Camera(new Point3D(0., 0., -200.), new Point3D(0., 0., 0.)));
 
         turtle3D = new Turtle3D_1(z);
 
@@ -614,8 +614,8 @@ public class Turtle3DTest extends TestCaseExtended {
         }
 
         public void testRotation360degRandomAxe() {
-            Point3D a = Point3D.random(10);
-            Point3D b = Point3D.random(10);
+            Point3D a = Point3D.random(10.);
+            Point3D b = Point3D.random(10.);
 
             Point3D y = rotate(a, b,
                     2 * Math.PI, Point3D.X);
@@ -637,7 +637,7 @@ public class Turtle3DTest extends TestCaseExtended {
                 y = rotate(a, b,
                         angle, y);
 
-                Point3D plus = y.plus(new Point3D(image.getWidth() / 2, image.getHeight() / 2, 0));
+                Point3D plus = y.plus(new Point3D(image.getWidth() / 2., image.getHeight() / 2., 0.));
                 graphics.drawLine((int)(double) plus.getX(), (int)(double) plus.getY(), (int)(double) plus.getX(), (int)(double) plus.getY());
 
                 Point3D y2 = y;
@@ -648,7 +648,7 @@ public class Turtle3DTest extends TestCaseExtended {
                     double angleB = 2 * Math.PI / 1000;
                     y2 = rotate(c, d,
                             angleB, y2);
-                    plus = y2.plus(new Point3D(image.getWidth() / 2, image.getHeight() / 2, 0));
+                    plus = y2.plus(new Point3D(image.getWidth() / 2., image.getHeight() / 2., 0.));
                     graphics.drawLine((int) plus.getX(), (int) plus.getY(), (int) plus.getX(), (int) plus.getY());
 
                 }
@@ -660,8 +660,8 @@ public class Turtle3DTest extends TestCaseExtended {
         public void testRotationMethode2() {
             Rotation2 rotation2 = new Rotation2();
 
-            Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6, 5, 6));
-            assertEqualsPoint3D(intersection, new Point3D(1, 5, 0), 0.001);
+            Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6., 5., 6.));
+            assertEqualsPoint3D(intersection, new Point3D(1., 5., 0.), 0.001);
 
         }
 
