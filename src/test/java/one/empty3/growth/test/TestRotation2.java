@@ -136,8 +136,8 @@ public class TestRotation2 extends TestObjetStub {
         Point3D p0 = Point3D.Y;
         p0.texture(new ColorTexture(Color.BLACK));
         for (int axeNo = 0; axeNo < 10; axeNo++) {
-            Point3D random = Point3D.random(10);
-            Point3D random2 = Point3D.random(10);
+            Point3D random = Point3D.random(10.);
+            Point3D random2 = Point3D.random(10.);
             Color color1 = random();
             Color color2 = random();
             for (int i = 0; i < MAX; i++) {
