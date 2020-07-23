@@ -130,9 +130,9 @@
 package one.empty3.growth.graphics.test;
 
 
-import one.empty3.empty3.*;
-import one.empty3.empty3.core.testing.TestObjetStub;
-import one.empty3.empty3.core.tribase.TRISphere;
+import one.empty3.library.*;
+import one.empty3.library.core.testing.TestObjetStub;
+import one.empty3.library.core.tribase.TRISphere;
 import one.empty3.growth.*;
 import one.empty3.growth.graphics.Rotation;
 import one.empty3.growth.graphics.Rotation2;

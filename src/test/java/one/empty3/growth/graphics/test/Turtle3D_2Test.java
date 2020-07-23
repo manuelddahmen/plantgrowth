@@ -48,7 +48,7 @@
 
 package one.empty3.growth.graphics.test;
 
-import one.empty3.empty3.*;
+import one.empty3.library.*;
 import one.empty3.growth.TestCaseExtended;
 import one.empty3.growth.graphics.DrawingLSystem2D;
 import one.empty3.growth.graphics.Turtle3D;

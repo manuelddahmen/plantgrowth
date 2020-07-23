@@ -110,11 +110,11 @@ package one.empty3.growth.test;/*
  *     along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import one.empty3.empty3.ColorTexture;
-import one.empty3.empty3.Point3D;
-import one.empty3.empty3.SegmentDroite;
-import one.empty3.empty3.core.testing.TestObjetStub;
-import one.empty3.empty3.core.tribase.TRISphere;
+import one.empty3.library.ColorTexture;
+import one.empty3.library.Point3D;
+import one.empty3.library.LineSegment;
+import one.empty3.library.core.testing.TestObjetStub;
+import one.empty3.library.core.tribase.TRISphere;
 import one.empty3.growth.graphics.Rotation;
 
 import java.awt.*;
@@ -132,7 +132,7 @@ public class TestRotation2 extends TestObjetStub {
 
     public void testScene() {
         double MAX = 200.0;
-        double MAXCERLE = 10;
+        double MAXCERLE = 10.;
         Point3D p0 = Point3D.Y;
         p0.texture(new ColorTexture(Color.BLACK));
         for (int axeNo = 0; axeNo < 10; axeNo++) {
@@ -145,13 +145,13 @@ public class TestRotation2 extends TestObjetStub {
                 Rotation rotation = new Rotation(random, Point3D.Y, 2 * Math.PI * i / MAX);
                 Point3D p = rotation.rotate(random2);
                 p.texture(new ColorTexture(color1));
-                SegmentDroite segmentDroite = new SegmentDroite(p0, p);
+                LineSegment segmentDroite = new LineSegment(p0, p);
                 segmentDroite.texture(new ColorTexture(color1));
                 TRISphere triSphere = new TRISphere(p, 1.0);
                 triSphere.texture(new ColorTexture(color1));
                 scene().add(segmentDroite);
                 p0 = p;
-                camera().setEye(new Point3D(0, 0, -1000.0));
+                camera().setEye(new Point3D(0., 0., -1000.0));
             }
         }
     }

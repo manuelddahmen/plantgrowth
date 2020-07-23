@@ -174,7 +174,7 @@ package one.empty3.growth.test;/*
  *     along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import one.empty3.empty3.Point3D;
+import one.empty3.library.Point3D;
 import one.empty3.growth.graphics.Rotation2;
 import junit.framework.TestCase;
 
@@ -221,17 +221,17 @@ public class TestRotation extends TestCase {
     }
 
     public void testRotationNonO() {
-        Point3D x = rotate(Point3D.X, new Point3D(10, 0, 0),
-                Math.PI, new Point3D(3, 5, 5));
-        Point3D y = new Point3D(3, -5, -5);
+        Point3D x = rotate(Point3D.X, new Point3D(10., 0., 0.),
+                Math.PI, new Point3D(3., 5., 5.));
+        Point3D y = new Point3D(3., -5., -5.);
 
         assertEqualsPoint3D(x, y, 0.1);
 
     }
 
     public void testRotation180() {
-        Point3D x = rotate(new Point3D(11, 0, 0), new Point3D(10, 0, 0),
-                Math.PI, new Point3D(3, 5, 0));
+        Point3D x = rotate(new Point3D(11., 0., 0.), new Point3D(10., 0., 0.),
+                Math.PI, new Point3D(3., 5., 0.));
         Point3D y = new Point3D(3, -5, 0);
 
         assertEqualsPoint3D(x, y, 0.1);
@@ -239,11 +239,11 @@ public class TestRotation extends TestCase {
     }
 
     public void testRotation30deg() {
-        Point3D x = new Point3D(3, 5, 5);
+        Point3D x = new Point3D(3., 5., 5.);
         Point3D y = x;
 
         for (int i = 0; i < 12 * 2; i++) {
-            x = rotate(Point3D.X, new Point3D(10, 0, 0),
+            x = rotate(Point3D.X, new Point3D(10., 0., 0.),
                     Math.PI / 6, x);
         }
 
@@ -253,18 +253,18 @@ public class TestRotation extends TestCase {
     }
 
     public void testRotation0degRandomPoint() {
-        Point3D x = Point3D.random(10);
+        Point3D x = Point3D.random(10.);
 
-        Point3D y = rotate(Point3D.X, new Point3D(10, 0, 0),
-                0, x);
+        Point3D y = rotate(Point3D.X, new Point3D(10., 0., 0.),
+                0., x);
 
         assertEqualsPoint3D(x, y, 0.1);
 
     }
 
     public void testRotation0degRandomAxe() {
-        Point3D a = Point3D.random(10);
-        Point3D b = Point3D.random(10);
+        Point3D a = Point3D.random(10.);
+        Point3D b = Point3D.random(10.);
 
         Point3D y = rotate(a, b,
                 0, Point3D.X);
@@ -274,8 +274,8 @@ public class TestRotation extends TestCase {
     }
 
     public void testRotation360degRandomAxe() {
-        Point3D a = Point3D.random(10);
-        Point3D b = Point3D.random(10);
+        Point3D a = Point3D.random(10.);
+        Point3D b = Point3D.random(10.);
 
         Point3D y = rotate(a, b,
                 2 * Math.PI, Point3D.X);

@@ -144,8 +144,8 @@
 
 package one.empty3.growth.graphics.test;
 
-import one.empty3.empty3.Point2D;
-import one.empty3.empty3.Point3D;
+import one.empty3.library.Point2D;
+import one.empty3.library.Point3D;
 import one.empty3.growth.graphics.Turtle2D;
 import junit.framework.TestCase;
 import org.junit.After;

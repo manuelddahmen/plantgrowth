@@ -152,25 +152,25 @@ public class TestRotation2_methodeBis extends TestCaseExtended {
     }
 
     public void testRotationNonO() {
-        Point3D x = rotate(Point3D.X, new Point3D(10, 0, 0),
-                Math.PI, new Point3D(3, 5, 5));
-        Point3D y = new Point3D(3, -5, -5);
+        Point3D x = rotate(Point3D.X, new Point3D(10d, 0d, 0d),
+                Math.PI, new Point3D(3d, 5d, 5d));
+        Point3D y = new Point3D(3d, -5d, -5d);
 
         assertEqualsPoint3D(x, y, 0.1);
 
     }
 
     public void testRotation180() {
-        Point3D x = rotate(new Point3D(11, 0, 0), new Point3D(10, 0, 0),
-                Math.PI, new Point3D(3, 5, 0));
-        Point3D y = new Point3D(3, -5, 0);
+        Point3D x = rotate(new Point3D(11d, 0d, 0d), new Point3D(10d, 0d, 0d),
+                Math.PI, new Point3D(3d, 5d, 0d));
+        Point3D y = new Point3D(3d, -5d, 0d);
 
         assertEqualsPoint3D(x, y, 0.1);
 
     }
 
     public void testRotation30deg() {
-        Point3D x = new Point3D(3, 5, 5);
+        Point3D x = new Point3D(3d, 5d, 5d);
         Point3D y = x;
 
         for (int i = 0; i < 12 * 2; i++) {
