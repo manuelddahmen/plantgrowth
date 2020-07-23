@@ -20,6 +20,10 @@
     <groupId>one.empty3</groupId>
     <artifactId>plantgrowth</artifactId>
     <version>2020.3.7</version>
+<description>3D rendering engine. Plus modelling. expected glsl textures 3d and 2d rendering</description>
+    <packaging>jar</packaging>
+    <url>https://github.com/manuelddahmen/empty3</url>
+    
     <distributionManagement>
   <snapshotRepository>
     <id>ossrh</id>
@@ -56,7 +60,19 @@ scm:git:git://github.com/manuelddahmen/plantgrowth.git
 </developerConnection>
 	</scm>
     
+<developers>
+		<developer>
+			<email>dathewolf@gmail.com</email>
+			<name>Manuel D Dahmen
+			</name>
+			<url>https://github.com/manuelddahmen</url>
+			<id>manuelddahmen</id>
+		</developer>
+	</developers>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
     
     
     <build>
