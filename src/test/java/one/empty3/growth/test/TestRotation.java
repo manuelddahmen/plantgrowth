@@ -213,7 +213,7 @@ public class TestRotation extends TestCase {
     public void testRotation90() {
         Point3D x = rotate(Point3D.O0, Point3D.X,
                 Math.PI, Point3D.Z);
-        Point3D y = Point3D.Z.mult(-1);
+        Point3D y = Point3D.Z.mult(-1.);
 
         assertEqualsPoint3D(x, y, 0.1);
 
@@ -267,7 +267,7 @@ public class TestRotation extends TestCase {
         Point3D b = Point3D.random(10.);
 
         Point3D y = rotate(a, b,
-                0, Point3D.X);
+                0., Point3D.X);
 
         assertEqualsPoint3D(Point3D.X, y, 0.1);
 
@@ -293,8 +293,8 @@ public class TestRotation extends TestCase {
     public void testRotationMethode2() {
         Rotation2 rotation2 = new Rotation2();
 
-        Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6, 5, 6));
-        assertEqualsPoint3D(intersection, new Point3D(1, 5, 0), 0.001);
+        Point3D intersection = rotation2.projection(Point3D.X, Point3D.Y, new Point3D(6., 5., 6.));
+        assertEqualsPoint3D(intersection, new Point3D(1., 5., 0.), 0.001);
 
     }
 
