@@ -3,23 +3,105 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7fd09acf-54f1-4728-a241-41207a28a4a0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__be_manudahmen_empty3_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__be_manudahmen_jcalculator_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_randelshofer_montemedia_0_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_tools_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_media_jai_codec_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_media_jai_com_springsource_javax_media_jai_codec_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_media_jai_com_springsource_javax_media_jai_core_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_media_jai_core_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_media_jai_imageio_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_media_jmf_2_1_1e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_vecmath_vecmath_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xuggle_xuggle_xuggler_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/App2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/AudioViewer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Enveloppe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Note.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/SoundProductionSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/be/manudahmen/growth/audio/Timer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/sound/test/TestSound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_windows/git.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_windows/laf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_windows/path.macros.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codestyles/Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-maven" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TreeData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/generativemusic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/AppSound.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/ApplyActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/Constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/FunctionalParameter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/FunctionalParameter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/LSystem$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/LSystem$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/LSystem$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/LSystem$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/LSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/NotWellFormattedSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/Parameter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/ParameterSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/Parameters$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/Parameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/Symbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/SymbolSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/TestCaseExtended.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/actionstype/CharacterAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/actionstype/DoubleAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/actionstype/IntegerAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/actionstype/StringAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Axis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/DrawingLSystem2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Rotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Rotation2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Turtle2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Turtle3D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Turtle3D_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Turtle3D_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Turtle3D_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/one/empty3/growth/graphics/Turtle3D_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/exported-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plant-growth-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.TestBasic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.TestMethodEqualsSymbol.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.TestRotation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.TestRotation2_methodeBis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.graphics.Turtle2DTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.graphics.Turtle3D_4Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.graphics.test.TestDrawingLSystem2D.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.graphics.test.Turtle3DTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.manudahmen.growth.graphics.test.Turtle3D_2Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.TestBasic.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.TestMethodEqualsSymbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.TestRotation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.TestRotation2_methodeBis.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.graphics.Turtle2DTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.graphics.Turtle3D_4Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.graphics.test.TestDrawingLSystem2D.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.graphics.test.Turtle3DTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.manudahmen.growth.graphics.test.Turtle3D_2Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/manudahmen/growth/graphics/test/TestDrawingLSystem2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/manudahmen/growth/graphics/test/Turtle3DTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/manudahmen/growth/graphics/test/Turtle3D_2Test.class" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.idea/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +109,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Plants-Growth-2" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -150,11 +229,6 @@
         <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -178,6 +252,7 @@
     <option name="width" value="782" />
     <option name="height" value="733" />
   </component>
+  <component name="ProjectId" id="1qtRSwnN32jPb4Bv5gwcpBd90ON" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -297,214 +372,232 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="pom.xml&#9;FILE&#9;file://C:/Users/Line/IdeaProjects/Plants-Growth-2/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_161/lib/javafx-mx.jar!/" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/java/main" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="pom.xml&#9;FILE&#9;file://C:/Users/Line/IdeaProjects/Plants-Growth-2/pom.xml" />
-    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/java/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="be.manudahmen.growth.graphics" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.manudahmen.growth.audio" />
+      <recent name="be.manudahmen.growth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\manue\IdeaProjects\plantgrowth" />
+      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\resouces\fxml" />
+      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\test\be\manudahmen\growth\test" />
+      <recent name="C:\Users\Line\Pictures" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="be.manudahmen.growth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Line\IdeaProjects\" />
       <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\main\be\manudahmen\growth" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\resouces\fxml" />
-      <recent name="C:\Users\Line\IdeaProjects\Plants-2.0\src\java\test\be\manudahmen\growth\test" />
-      <recent name="C:\Users\Line\Pictures" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.manudahmen.growth" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.manudahmen.growth.graphics" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="be.manudahmen.growth.graphics" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="be.manudahmen.growth.audio" />
-      <recent name="be.manudahmen.growth" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Maven.run maven">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.App" />
-      <module name="plants" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.manudahmen.growth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.App2" />
-      <module name="plants" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.manudahmen.growth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestSound.testNotationAnglaiseNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plants" />
       <extension name="coverage" track_test_folders="true">
         <pattern>
           <option name="PATTERN" value="be.manudahmen.growth.graphics.sound.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="be.manudahmen.growth.graphics.sound.test" />
       <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.graphics.sound.test.TestSound" />
       <option name="METHOD_NAME" value="testNotationAnglaiseNote" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <dir value="$PROJECT_DIR$/src/java/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="plants" />
+      <extension name="coverage" track_test_folders="true" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
       <dir value="$PROJECT_DIR$/src/java/test" />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestSound.testPlayOctaves" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plants" />
+    <configuration name="be.manudahmen.growth.graphics.sound.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" track_test_folders="true">
         <pattern>
           <option name="PATTERN" value="be.manudahmen.growth.graphics.sound.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="PACKAGE_NAME" value="be.manudahmen.growth.graphics.sound.test" />
-      <option name="MAIN_CLASS_NAME" value="be.manudahmen.growth.graphics.sound.test.TestSound" />
-      <option name="METHOD_NAME" value="testPlayOctaves" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <dir value="$PROJECT_DIR$/src/java/test" />
-      <patterns />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="plants" />
-      <extension name="coverage" track_test_folders="true" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="directory" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <dir value="$PROJECT_DIR$/src/java/test" />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="plant-growth-1.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/plant-growth-1.jar" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Line\IdeaProjects\Plants-2.0" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="plants" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="plants" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run maven" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.App2" />
-      <item itemvalue="JAR Application.plant-growth-1.jar" />
-      <item itemvalue="JUnit.TestSound.testPlayOctaves" />
+      <item itemvalue="JUnit.be.manudahmen.growth.graphics.sound.test" />
       <item itemvalue="JUnit.TestSound.testNotationAnglaiseNote" />
+      <item itemvalue="Maven.run maven" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.TestSound.testPlayOctaves" />
-        <item itemvalue="JAR Application.plant-growth-1.jar" />
+        <item itemvalue="JUnit.be.manudahmen.growth.graphics.sound.test" />
         <item itemvalue="JUnit.TestSound.testNotationAnglaiseNote" />
-        <item itemvalue="Application.App2" />
       </list>
     </recent_temporary>
   </component>
@@ -513,6 +606,7 @@
       <projects_view />
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -559,6 +653,7 @@
       <workItem from="1522319578449" duration="1575000" />
       <workItem from="1522465178311" duration="1724000" />
       <workItem from="1522935461518" duration="1822000" />
+      <workItem from="1617896908863" duration="2582000" />
     </task>
     <task id="LOCAL-00012" summary="Turtle2D graphics">
       <created>1519405761171</created>
@@ -991,10 +1086,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -1037,17 +1140,19 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/test/be/manudahmen/growth/graphics/test/Turtle2DTest.java</url>
           <line>112</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/main/be/manudahmen/growth/LSystem.java</url>
           <line>280</line>
-          <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/one/empty3/growth/test/TestMethodEqualsSymbol.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
