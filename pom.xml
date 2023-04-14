@@ -503,7 +503,7 @@ ED0DB26D5F0BDADD1CB2BC079B7BFF1322EE55E4-->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20201115</version>
+            <version>20230227</version>
         </dependency>
     </dependencies>
 </project>
